@@ -64,7 +64,8 @@
 		2657FEFB28AF94F5003E7161 /* AddProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2657FEF928AF94F5003E7161 /* AddProductsVC.xib */; };
 		2657FF0C28AFA155003E7161 /* TypeClothesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FF0A28AFA155003E7161 /* TypeClothesCell.swift */; };
 		2657FF0D28AFA155003E7161 /* TypeClothesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2657FF0B28AFA155003E7161 /* TypeClothesCell.xib */; };
-		2C4AFB8EFB6DDA8D698EA54E /* Pods_TranDucThang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5E1DD186B93E80E376AEDF /* Pods_TranDucThang.framework */; };
+		454D65692A08FB6200EF2ECD /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454D65672A08FB6200EF2ECD /* Realm.framework */; };
+		454D656A2A08FB6200EF2ECD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454D65682A08FB6200EF2ECD /* RealmSwift.framework */; };
 		45643D6D2A08EA6E00616583 /* STableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6A2A08EA6E00616583 /* STableView.swift */; };
 		45643D6E2A08EA6E00616583 /* STableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6B2A08EA6E00616583 /* STableHeaderView.swift */; };
 		45643D6F2A08EA6E00616583 /* STableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6C2A08EA6E00616583 /* STableViewCell.swift */; };
@@ -88,7 +89,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		24F1C88E5D099440CD017335 /* Pods-TranDucThang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranDucThang.release.xcconfig"; path = "Target Support Files/Pods-TranDucThang/Pods-TranDucThang.release.xcconfig"; sourceTree = "<group>"; };
 		260CAF9828ADFB290062638C /* TranDucThang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranDucThang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		260CAF9B28ADFB290062638C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		260CAF9D28ADFB290062638C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +148,8 @@
 		2657FEF928AF94F5003E7161 /* AddProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductsVC.xib; sourceTree = "<group>"; };
 		2657FF0A28AFA155003E7161 /* TypeClothesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeClothesCell.swift; sourceTree = "<group>"; };
 		2657FF0B28AFA155003E7161 /* TypeClothesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeClothesCell.xib; sourceTree = "<group>"; };
+		454D65672A08FB6200EF2ECD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		454D65682A08FB6200EF2ECD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		45643D6A2A08EA6E00616583 /* STableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableView.swift; sourceTree = "<group>"; };
 		45643D6B2A08EA6E00616583 /* STableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableHeaderView.swift; sourceTree = "<group>"; };
 		45643D6C2A08EA6E00616583 /* STableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableViewCell.swift; sourceTree = "<group>"; };
@@ -155,8 +157,6 @@
 		45643D712A08EAA800616583 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		45643D742A08EB0900616583 /* SCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCollectionView.swift; sourceTree = "<group>"; };
 		45643D752A08EB0A00616583 /* SCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCollectionViewCell.swift; sourceTree = "<group>"; };
-		9E5E1DD186B93E80E376AEDF /* Pods_TranDucThang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranDucThang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B28AA7A97DB642440DDA7BDB /* Pods-TranDucThang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranDucThang.debug.xcconfig"; path = "Target Support Files/Pods-TranDucThang/Pods-TranDucThang.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +164,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C4AFB8EFB6DDA8D698EA54E /* Pods_TranDucThang.framework in Frameworks */,
+				454D65692A08FB6200EF2ECD /* Realm.framework in Frameworks */,
+				454D656A2A08FB6200EF2ECD /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +177,6 @@
 			children = (
 				260CAF9A28ADFB290062638C /* TranDucThang */,
 				260CAF9928ADFB290062638C /* Products */,
-				79BD6E594B836311352E24A5 /* Pods */,
-				97E4B59D661CC2E7B62CC2C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -272,6 +271,7 @@
 		260CB06928ADFC230062638C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				454D656B2A08FBF700EF2ECD /* Libs */,
 				260CB06A28ADFC230062638C /* BaseVC.swift */,
 				260CB06B28ADFC230062638C /* VVConstant.swift */,
 				260CB06C28ADFC230062638C /* Extensions */,
@@ -453,21 +453,13 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		79BD6E594B836311352E24A5 /* Pods */ = {
+		454D656B2A08FBF700EF2ECD /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				B28AA7A97DB642440DDA7BDB /* Pods-TranDucThang.debug.xcconfig */,
-				24F1C88E5D099440CD017335 /* Pods-TranDucThang.release.xcconfig */,
+				454D65672A08FB6200EF2ECD /* Realm.framework */,
+				454D65682A08FB6200EF2ECD /* RealmSwift.framework */,
 			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		97E4B59D661CC2E7B62CC2C5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9E5E1DD186B93E80E376AEDF /* Pods_TranDucThang.framework */,
-			);
-			name = Frameworks;
+			path = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,12 +469,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 260CAFAC28ADFB2A0062638C /* Build configuration list for PBXNativeTarget "TranDucThang" */;
 			buildPhases = (
-				62A082C52FF5EC9B4BAC0CE7 /* [CP] Check Pods Manifest.lock */,
 				260CAF9428ADFB290062638C /* Sources */,
 				260CAF9528ADFB290062638C /* Frameworks */,
 				260CAF9628ADFB290062638C /* Resources */,
 				260CB04F28ADFC020062638C /* Embed Frameworks */,
-				B2EF0C78FD30C00CB528E5DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -551,48 +541,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		62A082C52FF5EC9B4BAC0CE7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TranDucThang-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B2EF0C78FD30C00CB528E5DA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TranDucThang/Pods-TranDucThang-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TranDucThang/Pods-TranDucThang-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TranDucThang/Pods-TranDucThang-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		260CAF9428ADFB290062638C /* Sources */ = {
@@ -788,7 +736,6 @@
 		};
 		260CAFAD28ADFB2A0062638C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B28AA7A97DB642440DDA7BDB /* Pods-TranDucThang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -798,6 +745,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TranDucThang/Libs",
+					"$(PROJECT_DIR)/TranDucThang/Common/Libs",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TranDucThang/Info.plist;
@@ -825,7 +773,6 @@
 		};
 		260CAFAE28ADFB2A0062638C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24F1C88E5D099440CD017335 /* Pods-TranDucThang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -835,6 +782,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TranDucThang/Libs",
+					"$(PROJECT_DIR)/TranDucThang/Common/Libs",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TranDucThang/Info.plist;
