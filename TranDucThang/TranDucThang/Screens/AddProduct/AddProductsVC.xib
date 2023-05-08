@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddProductsVC" customModule="TranDucThang" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyLbl" destination="ULK-Eg-0fq" id="dNI-TV-fYT"/>
+                <outlet property="navBarView" destination="t4m-9G-99F" id="SuZ-6h-Qeg"/>
+                <outlet property="saveBtn" destination="Thn-3u-IX0" id="U6O-Uo-yLT"/>
+                <outlet property="tableView" destination="1Ep-EQ-YwS" id="7Qt-tu-wZq"/>
+                <outlet property="typeProductBtn" destination="Hhu-zj-kPi" id="Pk5-wo-6nL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4m-9G-99F" customClass="NavBarView" customModule="TranDucThang" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="rxY-wo-qm6"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhu-zj-kPi">
+                    <rect key="frame" x="16" y="102" width="382" height="48"/>
+                    <color key="backgroundColor" red="0.0" green="0.29019607843137252" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Ma1-Vy-KhJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Chọn kiểu sản phẩm"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="vvRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didSelectType:" destination="-1" eventType="touchUpInside" id="mCh-W0-idE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thn-3u-IX0" customClass="VVButton" customModule="TranDucThang" customModuleProvider="target">
+                    <rect key="frame" x="16" y="814" width="382" height="48"/>
+                    <color key="backgroundColor" red="0.0" green="0.2901960784" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Ben-OP-oiH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Lưu"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="vvRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didSelectAdd:" destination="-1" eventType="touchUpInside" id="Y3P-x9-jB2"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Ep-EQ-YwS" customClass="VVTableView" customModule="TranDucThang" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="166" width="414" height="696"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="cell" value="VVDetailsQRCell"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAuto" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chọn kiểu sản phẩm đã bố ơi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULK-Eg-0fq">
+                    <rect key="frame" x="97" y="437.5" width="220.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ULK-Eg-0fq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="58e-EN-qMs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1Ep-EQ-YwS" secondAttribute="bottom" id="5ed-qg-6r9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Thn-3u-IX0" secondAttribute="bottom" id="A0V-dK-1yu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hhu-zj-kPi" secondAttribute="trailing" constant="16" id="D4U-Am-9n2"/>
+                <constraint firstItem="1Ep-EQ-YwS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="De1-Il-A2u"/>
+                <constraint firstItem="Hhu-zj-kPi" firstAttribute="top" secondItem="t4m-9G-99F" secondAttribute="bottom" constant="8" id="RY9-eX-uq9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="t4m-9G-99F" secondAttribute="trailing" id="V6D-ph-I6g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Thn-3u-IX0" secondAttribute="trailing" constant="16" id="YFn-si-wgw"/>
+                <constraint firstItem="1Ep-EQ-YwS" firstAttribute="top" secondItem="t4m-9G-99F" secondAttribute="bottom" constant="72" id="Yu9-qd-JUj"/>
+                <constraint firstItem="ULK-Eg-0fq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dge-H8-NqV"/>
+                <constraint firstItem="t4m-9G-99F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ltd-8u-dpf"/>
+                <constraint firstItem="Thn-3u-IX0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="r09-3S-fYY"/>
+                <constraint firstItem="t4m-9G-99F" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vLB-x2-LSA"/>
+                <constraint firstItem="Hhu-zj-kPi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xhe-3V-pfg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1Ep-EQ-YwS" secondAttribute="trailing" id="xsS-Yh-G4j"/>
+            </constraints>
+            <point key="canvasLocation" x="-326" y="-137"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

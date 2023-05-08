@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="SFProDisplay-Semibold.ttf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavBarView" customModule="VVBASE" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="RTP-kq-004" id="41T-Na-zwD"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="jmO-4D-0yK"/>
+                <outlet property="right1Button" destination="yla-th-rPM" id="blN-Mg-hyd"/>
+                <outlet property="right2Button" destination="EaV-5M-dnv" id="xuc-41-dBS"/>
+                <outlet property="titleLabel" destination="Te2-UK-DpT" id="jab-yS-gjr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" interfaceStyle="light" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTP-kq-004">
+                    <rect key="frame" x="16" y="2" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="deh-j4-1bN"/>
+                        <constraint firstAttribute="width" constant="40" id="u3r-Of-QvQ"/>
+                    </constraints>
+                    <state key="normal" image="ic_back_white"/>
+                    <connections>
+                        <action selector="didSelectBack:" destination="-1" eventType="touchUpInside" id="jCY-x9-LHr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Te2-UK-DpT" customClass="VVLabel" customModule="VVBASE" customModuleProvider="target">
+                    <rect key="frame" x="56" y="12" width="302" height="20"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yla-th-rPM">
+                    <rect key="frame" x="358" y="2" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="UhR-zs-Aew"/>
+                        <constraint firstAttribute="width" constant="40" id="ayh-n3-EJ2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.0" green="0.29019607843137252" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didSelectRight1:" destination="-1" eventType="touchUpInside" id="5n3-Ye-9iN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaV-5M-dnv">
+                    <rect key="frame" x="313" y="2" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="J0D-de-fnk"/>
+                        <constraint firstAttribute="height" constant="40" id="fd5-Eu-tMn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="13"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didSelectRight2:" destination="-1" eventType="touchUpInside" id="DLH-ow-e2v"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yla-th-rPM" firstAttribute="leading" secondItem="Te2-UK-DpT" secondAttribute="trailing" id="C5e-ht-XdT"/>
+                <constraint firstItem="Te2-UK-DpT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="EFy-Ls-TLi"/>
+                <constraint firstItem="Te2-UK-DpT" firstAttribute="leading" secondItem="RTP-kq-004" secondAttribute="trailing" id="QHF-76-C2o"/>
+                <constraint firstItem="yla-th-rPM" firstAttribute="centerY" secondItem="RTP-kq-004" secondAttribute="centerY" id="UMS-6U-eGI"/>
+                <constraint firstItem="RTP-kq-004" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="UmZ-Uz-0AV"/>
+                <constraint firstItem="yla-th-rPM" firstAttribute="leading" secondItem="EaV-5M-dnv" secondAttribute="trailing" constant="5" id="YfA-Kt-fTG"/>
+                <constraint firstAttribute="trailing" secondItem="yla-th-rPM" secondAttribute="trailing" constant="16" id="beD-xS-s3v"/>
+                <constraint firstItem="EaV-5M-dnv" firstAttribute="centerY" secondItem="yla-th-rPM" secondAttribute="centerY" id="iSR-gm-msG"/>
+                <constraint firstAttribute="height" constant="44" id="nUL-uh-5q8"/>
+                <constraint firstItem="RTP-kq-004" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oxa-9p-Je8"/>
+                <constraint firstItem="Te2-UK-DpT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sdq-w5-dEZ"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="8" y="-172.71364317841082"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back_white" width="24" height="24"/>
+    </resources>
+</document>
