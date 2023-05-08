@@ -106,16 +106,7 @@
 		260CB0AF28ADFC230062638C /* Number+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB07728ADFC230062638C /* Number+Extension.swift */; };
 		260CB0B028ADFC230062638C /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB07828ADFC230062638C /* Dictionary+Extension.swift */; };
 		260CB0B128ADFC230062638C /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB07928ADFC230062638C /* UITextField+Extension.swift */; };
-		260CB0B428ADFC230062638C /* VVTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB07E28ADFC230062638C /* VVTableHeaderView.swift */; };
-		260CB0B528ADFC230062638C /* VVTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB07F28ADFC230062638C /* VVTableView.swift */; };
-		260CB0B628ADFC230062638C /* VVTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB08028ADFC230062638C /* VVTableHeaderView.xib */; };
-		260CB0B728ADFC230062638C /* VVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB08128ADFC230062638C /* VVTableViewCell.xib */; };
-		260CB0B828ADFC230062638C /* VVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB08228ADFC230062638C /* VVTableViewCell.swift */; };
-		260CB0BA28ADFC230062638C /* VVTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB08628ADFC230062638C /* VVTextView.swift */; };
 		260CB0BB28ADFC230062638C /* VVButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB08828ADFC230062638C /* VVButton.swift */; };
-		260CB0BC28ADFC230062638C /* VVCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB08A28ADFC230062638C /* VVCollectionView.swift */; };
-		260CB0BD28ADFC230062638C /* CenterCellCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB08C28ADFC230062638C /* CenterCellCollectionViewFlowLayout.swift */; };
-		260CB0BE28ADFC230062638C /* VVCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB08D28ADFC230062638C /* VVCollectionViewCell.swift */; };
 		260CB0BF28ADFC230062638C /* VVTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB08F28ADFC230062638C /* VVTextField.swift */; };
 		260CB0C028ADFC230062638C /* TFContextType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB09028ADFC230062638C /* TFContextType.swift */; };
 		260CB0C128ADFC230062638C /* VVTextFieldFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB09128ADFC230062638C /* VVTextFieldFloat.swift */; };
@@ -130,14 +121,19 @@
 		260CB0E628AE3DE40062638C /* VVLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB0E528AE3DE40062638C /* VVLabel.swift */; };
 		260CB0EA28AE3E9C0062638C /* ProfileClientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB0E828AE3E9C0062638C /* ProfileClientVC.swift */; };
 		260CB0EB28AE3E9C0062638C /* ProfileClientVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB0E928AE3E9C0062638C /* ProfileClientVC.xib */; };
-		26122D1728B0E6F4007743A1 /* VVGenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26122D1528B0E6F4007743A1 /* VVGenericTableView.swift */; };
-		26122D1828B0E6F4007743A1 /* VVGenericTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26122D1628B0E6F4007743A1 /* VVGenericTableView.xib */; };
 		2657FEF528AF8AEB003E7161 /* ProductsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FEF328AF8AEB003E7161 /* ProductsCell.swift */; };
 		2657FEF628AF8AEB003E7161 /* ProductsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2657FEF428AF8AEB003E7161 /* ProductsCell.xib */; };
 		2657FEFA28AF94F5003E7161 /* AddProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FEF828AF94F5003E7161 /* AddProductsVC.swift */; };
 		2657FEFB28AF94F5003E7161 /* AddProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2657FEF928AF94F5003E7161 /* AddProductsVC.xib */; };
 		2657FF0C28AFA155003E7161 /* TypeClothesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FF0A28AFA155003E7161 /* TypeClothesCell.swift */; };
 		2657FF0D28AFA155003E7161 /* TypeClothesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2657FF0B28AFA155003E7161 /* TypeClothesCell.xib */; };
+		45643D6D2A08EA6E00616583 /* STableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6A2A08EA6E00616583 /* STableView.swift */; };
+		45643D6E2A08EA6E00616583 /* STableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6B2A08EA6E00616583 /* STableHeaderView.swift */; };
+		45643D6F2A08EA6E00616583 /* STableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6C2A08EA6E00616583 /* STableViewCell.swift */; };
+		45643D722A08EAA800616583 /* TextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45643D702A08EAA800616583 /* TextView.xib */; };
+		45643D732A08EAA800616583 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D712A08EAA800616583 /* TextView.swift */; };
+		45643D762A08EB0A00616583 /* SCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D742A08EB0900616583 /* SCollectionView.swift */; };
+		45643D772A08EB0A00616583 /* SCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D752A08EB0A00616583 /* SCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -263,16 +259,7 @@
 		260CB07728ADFC230062638C /* Number+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+Extension.swift"; sourceTree = "<group>"; };
 		260CB07828ADFC230062638C /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		260CB07928ADFC230062638C /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
-		260CB07E28ADFC230062638C /* VVTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVTableHeaderView.swift; sourceTree = "<group>"; };
-		260CB07F28ADFC230062638C /* VVTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVTableView.swift; sourceTree = "<group>"; };
-		260CB08028ADFC230062638C /* VVTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVTableHeaderView.xib; sourceTree = "<group>"; };
-		260CB08128ADFC230062638C /* VVTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVTableViewCell.xib; sourceTree = "<group>"; };
-		260CB08228ADFC230062638C /* VVTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVTableViewCell.swift; sourceTree = "<group>"; };
-		260CB08628ADFC230062638C /* VVTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVTextView.swift; sourceTree = "<group>"; };
 		260CB08828ADFC230062638C /* VVButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVButton.swift; sourceTree = "<group>"; };
-		260CB08A28ADFC230062638C /* VVCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVCollectionView.swift; sourceTree = "<group>"; };
-		260CB08C28ADFC230062638C /* CenterCellCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterCellCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		260CB08D28ADFC230062638C /* VVCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVCollectionViewCell.swift; sourceTree = "<group>"; };
 		260CB08F28ADFC230062638C /* VVTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVTextField.swift; sourceTree = "<group>"; };
 		260CB09028ADFC230062638C /* TFContextType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFContextType.swift; sourceTree = "<group>"; };
 		260CB09128ADFC230062638C /* VVTextFieldFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVTextFieldFloat.swift; sourceTree = "<group>"; };
@@ -288,14 +275,19 @@
 		260CB0E528AE3DE40062638C /* VVLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVLabel.swift; sourceTree = "<group>"; };
 		260CB0E828AE3E9C0062638C /* ProfileClientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileClientVC.swift; sourceTree = "<group>"; };
 		260CB0E928AE3E9C0062638C /* ProfileClientVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileClientVC.xib; sourceTree = "<group>"; };
-		26122D1528B0E6F4007743A1 /* VVGenericTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVGenericTableView.swift; sourceTree = "<group>"; };
-		26122D1628B0E6F4007743A1 /* VVGenericTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVGenericTableView.xib; sourceTree = "<group>"; };
 		2657FEF328AF8AEB003E7161 /* ProductsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCell.swift; sourceTree = "<group>"; };
 		2657FEF428AF8AEB003E7161 /* ProductsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsCell.xib; sourceTree = "<group>"; };
 		2657FEF828AF94F5003E7161 /* AddProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductsVC.swift; sourceTree = "<group>"; };
 		2657FEF928AF94F5003E7161 /* AddProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductsVC.xib; sourceTree = "<group>"; };
 		2657FF0A28AFA155003E7161 /* TypeClothesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeClothesCell.swift; sourceTree = "<group>"; };
 		2657FF0B28AFA155003E7161 /* TypeClothesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeClothesCell.xib; sourceTree = "<group>"; };
+		45643D6A2A08EA6E00616583 /* STableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableView.swift; sourceTree = "<group>"; };
+		45643D6B2A08EA6E00616583 /* STableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableHeaderView.swift; sourceTree = "<group>"; };
+		45643D6C2A08EA6E00616583 /* STableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableViewCell.swift; sourceTree = "<group>"; };
+		45643D702A08EAA800616583 /* TextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextView.xib; sourceTree = "<group>"; };
+		45643D712A08EAA800616583 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		45643D742A08EB0900616583 /* SCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCollectionView.swift; sourceTree = "<group>"; };
+		45643D752A08EB0A00616583 /* SCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -630,13 +622,9 @@
 		260CB07B28ADFC230062638C /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				26122D1528B0E6F4007743A1 /* VVGenericTableView.swift */,
-				26122D1628B0E6F4007743A1 /* VVGenericTableView.xib */,
-				260CB07E28ADFC230062638C /* VVTableHeaderView.swift */,
-				260CB07F28ADFC230062638C /* VVTableView.swift */,
-				260CB08028ADFC230062638C /* VVTableHeaderView.xib */,
-				260CB08128ADFC230062638C /* VVTableViewCell.xib */,
-				260CB08228ADFC230062638C /* VVTableViewCell.swift */,
+				45643D6B2A08EA6E00616583 /* STableHeaderView.swift */,
+				45643D6A2A08EA6E00616583 /* STableView.swift */,
+				45643D6C2A08EA6E00616583 /* STableViewCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -644,7 +632,8 @@
 		260CB08528ADFC230062638C /* TextView */ = {
 			isa = PBXGroup;
 			children = (
-				260CB08628ADFC230062638C /* VVTextView.swift */,
+				45643D712A08EAA800616583 /* TextView.swift */,
+				45643D702A08EAA800616583 /* TextView.xib */,
 			);
 			path = TextView;
 			sourceTree = "<group>";
@@ -660,19 +649,10 @@
 		260CB08928ADFC230062638C /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				260CB08A28ADFC230062638C /* VVCollectionView.swift */,
-				260CB08B28ADFC230062638C /* Layout */,
-				260CB08D28ADFC230062638C /* VVCollectionViewCell.swift */,
+				45643D742A08EB0900616583 /* SCollectionView.swift */,
+				45643D752A08EB0A00616583 /* SCollectionViewCell.swift */,
 			);
 			path = CollectionView;
-			sourceTree = "<group>";
-		};
-		260CB08B28ADFC230062638C /* Layout */ = {
-			isa = PBXGroup;
-			children = (
-				260CB08C28ADFC230062638C /* CenterCellCollectionViewFlowLayout.swift */,
-			);
-			path = Layout;
 			sourceTree = "<group>";
 		};
 		260CB08E28ADFC230062638C /* TextFields */ = {
@@ -838,14 +818,12 @@
 			files = (
 				2657FEFB28AF94F5003E7161 /* AddProductsVC.xib in Resources */,
 				2657FF0D28AFA155003E7161 /* TypeClothesCell.xib in Resources */,
-				26122D1828B0E6F4007743A1 /* VVGenericTableView.xib in Resources */,
 				260CAFA828ADFB2A0062638C /* LaunchScreen.storyboard in Resources */,
 				260CB05628ADFC140062638C /* Navbar&Tabbar.xcassets in Resources */,
 				2657FEF628AF8AEB003E7161 /* ProductsCell.xib in Resources */,
 				260CB0C228ADFC230062638C /* VVTextFieldFloat.xib in Resources */,
 				260CB06728ADFC1F0062638C /* AddNewClientVC.xib in Resources */,
 				260CB06428ADFC1F0062638C /* ClientCell.xib in Resources */,
-				260CB0B628ADFC230062638C /* VVTableHeaderView.xib in Resources */,
 				260CB05828ADFC140062638C /* ImageUI.xcassets in Resources */,
 				260CB0D428AE241F0062638C /* VVDetailsQRCell.xib in Resources */,
 				260CB0C728ADFC230062638C /* NavBarView.xib in Resources */,
@@ -853,7 +831,7 @@
 				260CB06528ADFC1F0062638C /* HomeVC.xib in Resources */,
 				260CAFA328ADFB290062638C /* Main.storyboard in Resources */,
 				260CB05728ADFC140062638C /* Assets.xcassets in Resources */,
-				260CB0B728ADFC230062638C /* VVTableViewCell.xib in Resources */,
+				45643D722A08EAA800616583 /* TextView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -865,22 +843,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				260CB00B28ADFB450062638C /* PanModalPresentationAnimator.swift in Sources */,
-				260CB0BD28ADFC230062638C /* CenterCellCollectionViewFlowLayout.swift in Sources */,
 				260CAFA028ADFB290062638C /* ViewController.swift in Sources */,
 				260CB03C28ADFB450062638C /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				260CB0B028ADFC230062638C /* Dictionary+Extension.swift in Sources */,
 				260CB02328ADFB450062638C /* ConstraintConstantTarget.swift in Sources */,
+				45643D6E2A08EA6E00616583 /* STableHeaderView.swift in Sources */,
 				260CB0CC28ADFC230062638C /* UIColor+Theme.swift in Sources */,
 				260CB0CB28ADFC230062638C /* VVThemeManager.swift in Sources */,
 				260CB0EA28AE3E9C0062638C /* ProfileClientVC.swift in Sources */,
 				260CB04B28ADFB560062638C /* DatabaseManager.swift in Sources */,
 				260CB00528ADFB450062638C /* PanModalHeight.swift in Sources */,
 				260CB00828ADFB450062638C /* PanModalPresenter.swift in Sources */,
+				45643D762A08EB0A00616583 /* SCollectionView.swift in Sources */,
 				260CB01228ADFB450062638C /* ConstraintMakerPriortizable.swift in Sources */,
 				260CB00328ADFB450062638C /* PanModalPresentable.swift in Sources */,
 				260CB00D28ADFB450062638C /* PanContainerView.swift in Sources */,
-				260CB0BE28ADFC230062638C /* VVCollectionViewCell.swift in Sources */,
 				260CB01728ADFB450062638C /* ConstraintMakerFinalizable.swift in Sources */,
+				45643D772A08EB0A00616583 /* SCollectionViewCell.swift in Sources */,
 				260CB03528ADFB450062638C /* ShimmeringViewProtocol.swift in Sources */,
 				260CB00E28ADFB450062638C /* DimmedView.swift in Sources */,
 				260CB02C28ADFB450062638C /* Debugging.swift in Sources */,
@@ -891,12 +870,10 @@
 				2657FEF528AF8AEB003E7161 /* ProductsCell.swift in Sources */,
 				260CB02828ADFB450062638C /* ConstraintLayoutGuideDSL.swift in Sources */,
 				260CB0A528ADFC230062638C /* UIFont+Extension.swift in Sources */,
-				260CB0B828ADFC230062638C /* VVTableViewCell.swift in Sources */,
 				260CB03028ADFB450062638C /* ConstraintDirectionalInsets.swift in Sources */,
 				260CB01328ADFB450062638C /* ConstraintAttributes.swift in Sources */,
 				260CB01528ADFB450062638C /* ConstraintPriorityTarget.swift in Sources */,
 				260CB01F28ADFB450062638C /* ConstraintView.swift in Sources */,
-				26122D1728B0E6F4007743A1 /* VVGenericTableView.swift in Sources */,
 				260CB04A28ADFB560062638C /* VestModel.swift in Sources */,
 				260CB02A28ADFB450062638C /* ConstraintItem.swift in Sources */,
 				2657FEFA28AF94F5003E7161 /* AddProductsVC.swift in Sources */,
@@ -910,7 +887,6 @@
 				260CB02E28ADFB450062638C /* LayoutConstraint.swift in Sources */,
 				260CB00A28ADFB450062638C /* PanModalAnimator.swift in Sources */,
 				260CB01628ADFB450062638C /* ConstraintInsets.swift in Sources */,
-				260CB0BC28ADFC230062638C /* VVCollectionView.swift in Sources */,
 				260CB00928ADFB450062638C /* PanModalPresentationDelegate.swift in Sources */,
 				260CB02428ADFB450062638C /* ConstraintOffsetTarget.swift in Sources */,
 				260CB00228ADFB450062638C /* PanModalPresentable+Defaults.swift in Sources */,
@@ -925,8 +901,10 @@
 				260CB01D28ADFB450062638C /* ConstraintConfig.swift in Sources */,
 				260CB04728ADFB560062638C /* PantsModel.swift in Sources */,
 				260CB03D28ADFB450062638C /* UIScrollView+VNBKeyboardAvoidingAdditions.m in Sources */,
+				45643D6D2A08EA6E00616583 /* STableView.swift in Sources */,
 				260CB03A28ADFB450062638C /* TPKeyboardAvoidingTableView.m in Sources */,
 				260CB0A828ADFC230062638C /* VVUserdefault.swift in Sources */,
+				45643D732A08EAA800616583 /* TextView.swift in Sources */,
 				260CB01C28ADFB450062638C /* ConstraintDirectionalInsetTarget.swift in Sources */,
 				260CB04628ADFB560062638C /* ShirtModel.swift in Sources */,
 				260CB0C628ADFC230062638C /* NavBarView.swift in Sources */,
@@ -934,7 +912,6 @@
 				260CB03628ADFB450062638C /* UIView+Extensions.swift in Sources */,
 				260CB02728ADFB450062638C /* ConstraintRelation.swift in Sources */,
 				260CB01B28ADFB450062638C /* ConstraintInsetTarget.swift in Sources */,
-				260CB0BA28ADFC230062638C /* VVTextView.swift in Sources */,
 				260CB01128ADFB450062638C /* ConstraintDescription.swift in Sources */,
 				260CB0BB28ADFC230062638C /* VVButton.swift in Sources */,
 				260CB0AF28ADFC230062638C /* Number+Extension.swift in Sources */,
@@ -952,13 +929,12 @@
 				260CB00C28ADFB450062638C /* PanModalPresentationController.swift in Sources */,
 				260CB03828ADFB450062638C /* UIView+Template.swift in Sources */,
 				260CB0B128ADFC230062638C /* UITextField+Extension.swift in Sources */,
-				260CB0B528ADFC230062638C /* VVTableView.swift in Sources */,
 				260CB02F28ADFB450062638C /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				260CB01A28ADFB450062638C /* ConstraintPriority.swift in Sources */,
 				260CB02D28ADFB450062638C /* ConstraintRelatableTarget.swift in Sources */,
 				260CB0AC28ADFC230062638C /* UIViewController+Extension.swift in Sources */,
 				260CB01828ADFB450062638C /* ConstraintDSL.swift in Sources */,
-				260CB0B428ADFC230062638C /* VVTableHeaderView.swift in Sources */,
+				45643D6F2A08EA6E00616583 /* STableViewCell.swift in Sources */,
 				260CB04828ADFB560062638C /* RealmServices.swift in Sources */,
 				260CB0A728ADFC230062638C /* Date+Extension.swift in Sources */,
 				260CB0C128ADFC230062638C /* VVTextFieldFloat.swift in Sources */,

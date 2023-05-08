@@ -9,7 +9,7 @@ import UIKit
 
 class AddProductsVC: BaseVC {
     @IBOutlet weak var saveBtn: VVButton!
-    @IBOutlet weak var tableView: VVTableView!
+    @IBOutlet weak var tableView: STableView!
     @IBOutlet weak var typeProductBtn: UIButton!
     @IBOutlet weak var emptyLbl: UILabel!
     

@@ -20,7 +20,7 @@ struct DetailCellModel {
     var isEnable: Bool = true
 }
 
-class VVDetailsQRCell: VVTableViewCell {
+class VVDetailsQRCell: STableViewCell {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var textField: VVTextFieldFloat!
     
