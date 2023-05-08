@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TypeClothesCell: VVTableViewCell {
+class TypeClothesCell: STableViewCell {
     @IBOutlet weak var checkImg: UIImageView!
     @IBOutlet weak var serviceLbl: VVLabel!
     

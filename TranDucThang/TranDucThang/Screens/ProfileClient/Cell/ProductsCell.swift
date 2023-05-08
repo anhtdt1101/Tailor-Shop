@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProductsCell: VVTableViewCell {
+class ProductsCell: STableViewCell {
     
     @IBOutlet weak var statusLbl: UILabel!
     @IBOutlet weak var pickupDateLbl: UILabel!

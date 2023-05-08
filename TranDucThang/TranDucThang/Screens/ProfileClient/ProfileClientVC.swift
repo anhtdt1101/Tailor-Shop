@@ -8,7 +8,7 @@
 import UIKit
 
 class ProfileClientVC: BaseVC {
-    @IBOutlet weak var tableView: VVTableView!
+    @IBOutlet weak var tableView: STableView!
     @IBOutlet weak var noteLbl: UILabel!
     @IBOutlet weak var addressLbl: UILabel!
     @IBOutlet weak var phoneLbl: UILabel!

@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeVC: BaseVC {
-    @IBOutlet weak var tableView: VVTableView!
+    @IBOutlet weak var tableView: STableView!
     @IBOutlet weak var searchTF: VVTextFieldFloat!
     
     var dataClient: [ClientModel] = []

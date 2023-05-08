@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ClientCell: VVTableViewCell {
+class ClientCell: STableViewCell {
 
     @IBOutlet weak var addressLbl: UILabel!
     @IBOutlet weak var phoneLbl: UILabel!

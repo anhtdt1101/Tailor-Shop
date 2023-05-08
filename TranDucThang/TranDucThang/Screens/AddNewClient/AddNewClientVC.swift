@@ -8,7 +8,7 @@
 import UIKit
 
 class AddNewClientVC: BaseVC {
-    @IBOutlet weak var tableView: VVTableView!
+    @IBOutlet weak var tableView: STableView!
     @IBOutlet weak var addNewBtn: VVButton!
     
     var dataModel = ClientModel()

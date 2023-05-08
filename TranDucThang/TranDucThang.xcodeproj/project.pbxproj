@@ -269,7 +269,6 @@
 		260CB0A028ADFC230062638C /* VVThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVThemeManager.swift; sourceTree = "<group>"; };
 		260CB0A128ADFC230062638C /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		260CB0A228ADFC230062638C /* UIFont+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Theme.swift"; sourceTree = "<group>"; };
-		260CB0CE28ADFCAE0062638C /* TranDucThang-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TranDucThang-Bridging-Header.h"; sourceTree = "<group>"; };
 		260CB0D128AE241F0062638C /* VVDetailsQRCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVDetailsQRCell.swift; sourceTree = "<group>"; };
 		260CB0D228AE241F0062638C /* VVDetailsQRCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVDetailsQRCell.xib; sourceTree = "<group>"; };
 		260CB0E528AE3DE40062638C /* VVLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVLabel.swift; sourceTree = "<group>"; };
@@ -306,7 +305,6 @@
 		260CAF8F28ADFB290062638C = {
 			isa = PBXGroup;
 			children = (
-				260CB0CE28ADFCAE0062638C /* TranDucThang-Bridging-Header.h */,
 				260CAF9A28ADFB290062638C /* TranDucThang */,
 				260CAF9928ADFB290062638C /* Products */,
 			);
@@ -1118,7 +1116,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = anhtdt.TranDucThang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/tienanhtranduc/ios/TranDucThang/TranDucThang-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1154,7 +1151,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = anhtdt.TranDucThang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/tienanhtranduc/ios/TranDucThang/TranDucThang-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
