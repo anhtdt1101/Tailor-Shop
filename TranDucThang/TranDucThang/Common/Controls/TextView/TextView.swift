@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 class TextView: UIView {
     
     @IBOutlet var vContent: UIView!
@@ -19,7 +19,7 @@ class TextView: UIView {
             guard flag else {
                 return
             }
-            placeHolderLbl.text = placeHolder?.localized
+            placeHolderLbl.text = placeHolder
         }
     }
     
@@ -72,7 +72,7 @@ class TextView: UIView {
     }
 }
 
-extension MCTextView : UITextViewDelegate {
+extension TextView : UITextViewDelegate {
     func replaceViToEn(_ str: String) -> String {
         var vn = str.replacingOccurrences(of: "đ", with: "d")
         vn = vn.replacingOccurrences(of: "Đ", with: "D")
