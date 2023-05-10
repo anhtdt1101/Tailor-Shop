@@ -18,14 +18,7 @@ class NavBarView: UIView {
     var onBackAction: (() -> Void)?
     var onRight1Action: (() -> Void)?
     var onRight2Action: (() -> Void)?
-    // navbar trắng thì isStyleDefault = true
-    var isStyleDefault: Bool = true {
-        didSet {
-            titleLabel.textColor = isStyleDefault ? UIColor.hex("333333") : .white
-            let backImage = isStyleDefault ? UIImage(named: "ic_nav_back") : UIImage(named: "ic_back_white")
-            backButton.setImage(backImage, for: .normal)
-        }
-    }
+   
     var titleColor: UIColor = UIColor.hex("333333") {
         didSet {
             titleLabel.textColor = titleColor
@@ -51,7 +44,7 @@ class NavBarView: UIView {
             right1Button.setTitle(right1Title, for: .normal)
             right1Button.contentHorizontalAlignment = .center
             if let string = right1Title {
-                let widthString = string.widthOfString(usingFont: UIFont.customFont(.bold, size: 13))
+                let widthString = string.widthOfString(usingFont: UIFont.boldSystemFont(ofSize: 13))
                 right1Button.cWidth?.constant = widthString + 30
             } else {
                 right1Button.cWidth?.constant = 0
@@ -68,7 +61,7 @@ class NavBarView: UIView {
             right2Button.setTitle(right2Title, for: .normal)
             right2Button.contentHorizontalAlignment = .center
             if let string = right2Title {
-                let widthString = string.widthOfString(usingFont: UIFont.customFont(.bold, size: 13))
+                let widthString = string.widthOfString(usingFont: UIFont.boldSystemFont(ofSize: 13))
                 right2Button.cWidth?.constant = widthString + 30
             } else {
                 right2Button.cWidth?.constant = 0
@@ -103,7 +96,6 @@ class NavBarView: UIView {
         Bundle.main.loadNibNamed(NavBarView.identify, owner: self, options: nil)
         contentView.fixInView(self)
         self.cHeight?.priority = .defaultLow
-        isStyleDefault = true
     }
     
     // MARK: @IBAction

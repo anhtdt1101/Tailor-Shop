@@ -74,18 +74,6 @@ extension UIView {
         self.layer.shadowRadius = radius
     }
     
-    func generateQRCode(from string: String) -> UIImage? {
-        let data = string.data(using: String.Encoding.utf8)
-        if let filter = CIFilter(name: "CIQRCodeGenerator") {
-            filter.setValue(data, forKey: "inputMessage")
-            let transform = CGAffineTransform(scaleX: 10, y: 10)
-            if let output = filter.outputImage?.transformed(by: transform) {
-                return UIImage(ciImage: output)
-            }
-        }
-        return nil
-    }
-    
     var cHeight: NSLayoutConstraint? {
         get { return findLCWH(.height) }
     }
@@ -166,93 +154,6 @@ extension UIView {
 
     public var screenHeight: CGFloat {
         return UIScreen.main.bounds.height
-    }
-    
-    //MARK: Frame
-    var x: CGFloat {
-        get {
-            return self.frame.origin.x
-        }
-        set {
-            self.frame.origin.x = newValue
-        }
-    }
-    var y: CGFloat {
-        get {
-            return self.frame.origin.y
-        }
-        set {
-            self.frame.origin.y = newValue
-        }
-    }
-    var height: CGFloat {
-        get {
-            return self.frame.size.height
-        }
-        set {
-            self.frame.size.height = newValue
-        }
-    }
-    var width: CGFloat {
-        get {
-            return self.frame.size.width
-        }
-        set {
-            self.frame.size.width = newValue
-        }
-    }
-    var xRight: CGFloat {
-        get {
-            return self.x + self.width
-        }
-        set {
-            self.x = newValue - self.width
-        }
-    }
-    var yBottom: CGFloat {
-        get {
-            return self.y + self.height
-        }
-        set {
-            self.y = newValue - self.height
-        }
-    }
-    var origin: CGPoint {
-        set {
-            var r = self.frame
-            r.origin = newValue
-            self.frame = r
-        }
-        get {
-            return self.frame.origin
-        }
-    }
-    var size: CGSize {
-        get {
-            return self.frame.size
-        }
-        set {
-            var r = self.frame
-            r.size = newValue
-            self.frame = r
-        }
-    }
-    
-    var centerX: CGFloat {
-        get {
-            return self.center.x
-        }
-        set {
-            self.center.x = newValue
-        }
-    }
-    var centerY: CGFloat {
-        get {
-            return self.center.y
-        }
-        set {
-            self.center.y = newValue
-        }
     }
     
     var wdSafeAreaInsets: UIEdgeInsets {
@@ -393,26 +294,6 @@ extension UIView {
         self.layer.insertSublayer(shape, at: 0)
     }
     
-    func convertOrigin(toView:UIView? = nil) -> CGRect {
-        var point = self.origin
-        var vSup = self.superview
-        while(true) {
-            if vSup == toView ||
-                vSup == nil {
-                break
-            }
-            point.x += (vSup?.x ?? 0)
-            point.y += (vSup?.y ?? 0)
-            if let vScroll = vSup as? UIScrollView {
-                let offset = vScroll.contentOffset
-                point.x -= offset.x
-                point.y -= offset.y
-            }
-            vSup = vSup?.superview
-        }
-
-        return CGRect(origin: point, size: self.size)
-    }
 }
 
 extension UIStackView {
