@@ -22,7 +22,7 @@ struct DetailCellModel {
 
 class DetailsInputCell: STableViewCell {
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var textField: VVTextFieldFloat!
+    @IBOutlet weak var textField: DyniamicTF!
     
     var dataModel: DetailCellModel!
     

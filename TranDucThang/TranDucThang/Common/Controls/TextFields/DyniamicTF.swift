@@ -1,8 +1,8 @@
 //
-//  VVTextFieldFloat.swift
+//  DyniamicTF.swift
 //  VVBASE
 //
-//  Created by ChungNV MacProM1 on 29/06/2022.
+//  Created by Tien Anh Tran Duc on 18/08/2022.
 //
 
 import Foundation

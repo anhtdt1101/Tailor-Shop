@@ -43,7 +43,7 @@
                             <outlet property="delegate" destination="-1" id="UFe-2D-xRw"/>
                         </connections>
                     </textView>
-                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-Ok-igZ" customClass="VVTextFieldFloat" customModule="TranDucThang" customModuleProvider="target">
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-Ok-igZ" customClass="DyniamicTF" customModule="TranDucThang" customModuleProvider="target">
                         <rect key="frame" x="16" y="8" width="445" height="56"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>

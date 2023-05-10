@@ -2,7 +2,7 @@
 //  VVTextFieldValidate.swift
 //  VVBASE
 //
-//  Created by ChungNV MacProM1 on 12/05/2022.
+//  Created by Tien Anh Tran Duc on 18/08/2022.
 //
 
 import Foundation

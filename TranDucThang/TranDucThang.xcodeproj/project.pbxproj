@@ -33,8 +33,7 @@
 		260CB0A628ADFC230062638C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB06E28ADFC230062638C /* UIColor+Extension.swift */; };
 		260CB0A728ADFC230062638C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB06F28ADFC230062638C /* Date+Extension.swift */; };
 		260CB0BF28ADFC230062638C /* VVTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB08F28ADFC230062638C /* VVTextField.swift */; };
-		260CB0C028ADFC230062638C /* TFContextType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB09028ADFC230062638C /* TFContextType.swift */; };
-		260CB0C128ADFC230062638C /* VVTextFieldFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB09128ADFC230062638C /* VVTextFieldFloat.swift */; };
+		260CB0C128ADFC230062638C /* DyniamicTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB09128ADFC230062638C /* DyniamicTF.swift */; };
 		260CB0C228ADFC230062638C /* VVTextFieldFloat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB09228ADFC230062638C /* VVTextFieldFloat.xib */; };
 		260CB0C628ADFC230062638C /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB09928ADFC230062638C /* NavBarView.swift */; };
 		260CB0C728ADFC230062638C /* NavBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB09A28ADFC230062638C /* NavBarView.xib */; };
@@ -107,8 +106,7 @@
 		260CB06E28ADFC230062638C /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		260CB06F28ADFC230062638C /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		260CB08F28ADFC230062638C /* VVTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVTextField.swift; sourceTree = "<group>"; };
-		260CB09028ADFC230062638C /* TFContextType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFContextType.swift; sourceTree = "<group>"; };
-		260CB09128ADFC230062638C /* VVTextFieldFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVTextFieldFloat.swift; sourceTree = "<group>"; };
+		260CB09128ADFC230062638C /* DyniamicTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DyniamicTF.swift; sourceTree = "<group>"; };
 		260CB09228ADFC230062638C /* VVTextFieldFloat.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVTextFieldFloat.xib; sourceTree = "<group>"; };
 		260CB09928ADFC230062638C /* NavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		260CB09A28ADFC230062638C /* NavBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavBarView.xib; sourceTree = "<group>"; };
@@ -317,8 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				260CB08F28ADFC230062638C /* VVTextField.swift */,
-				260CB09028ADFC230062638C /* TFContextType.swift */,
-				260CB09128ADFC230062638C /* VVTextFieldFloat.swift */,
+				260CB09128ADFC230062638C /* DyniamicTF.swift */,
 				260CB09228ADFC230062638C /* VVTextFieldFloat.xib */,
 			);
 			path = TextFields;
@@ -536,9 +533,8 @@
 				45643D6F2A08EA6E00616583 /* STableViewCell.swift in Sources */,
 				260CB04828ADFB560062638C /* RealmServices.swift in Sources */,
 				260CB0A728ADFC230062638C /* Date+Extension.swift in Sources */,
-				260CB0C128ADFC230062638C /* VVTextFieldFloat.swift in Sources */,
+				260CB0C128ADFC230062638C /* DyniamicTF.swift in Sources */,
 				260CB04C28ADFB560062638C /* ProductModel.swift in Sources */,
-				260CB0C028ADFC230062638C /* TFContextType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
