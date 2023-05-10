@@ -11,7 +11,7 @@ import UIKit
 typealias VVVoidBlock = (() -> Void)
 typealias VVBoolBlock = ((Bool) -> Void)
 
-class VVTextFieldFloat : UIView {
+class DyniamicTF : UIView {
     /**Padding left*/
     var pLeft:CGFloat = 12
     /**Padding right*/
@@ -83,7 +83,7 @@ class VVTextFieldFloat : UIView {
             tf.type = type
         }
     }
-    private var itemButton: VVButton?
+    private var itemButton: UIButton?
     @IBInspectable var styleSelect: Bool = false {
         didSet {
             selectionLayout()
@@ -242,7 +242,7 @@ class VVTextFieldFloat : UIView {
         }
     }
 }
-extension VVTextFieldFloat : UITextFieldDelegate {
+extension DyniamicTF : UITextFieldDelegate {
     private func checkBtnClear() {
         let isEditting = tf.isFirstResponder
         //(on + có text) thì show btnclear
@@ -277,7 +277,7 @@ extension VVTextFieldFloat : UITextFieldDelegate {
     }
 }
 
-extension VVTextFieldFloat {
+extension DyniamicTF {
     override var canBecomeFirstResponder: Bool {
         return tf.canBecomeFirstResponder
     }
@@ -290,13 +290,13 @@ extension VVTextFieldFloat {
 }
 
 //MARK: NOTE + LEFT + RIGHT
-extension VVTextFieldFloat {
+extension DyniamicTF {
     @objc func didSelectItem() {
         onClickItem?()
     }
     
     func selectionLayout() {
-        itemButton = VVButton()
+        itemButton = UIButton()
         itemButton?.setTitle("", for: .normal)
         itemButton?.addTarget(self, action: #selector(didSelectItem), for: .touchUpInside)
         if itemButton?.superview == nil {

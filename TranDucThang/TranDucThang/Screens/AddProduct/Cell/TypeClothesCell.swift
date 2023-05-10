@@ -1,5 +1,5 @@
 //
-//  VVServiceBillSelectionCell.swift
+//  TypeClothesCell.swift
 //  VVBASE
 //
 //  Created by Tien Anh Tran Duc on 11/08/2022.
@@ -9,7 +9,7 @@ import UIKit
 
 class TypeClothesCell: STableViewCell {
     @IBOutlet weak var checkImg: UIImageView!
-    @IBOutlet weak var serviceLbl: VVLabel!
+    @IBOutlet weak var serviceLbl: UILabel!
     
     var isChecked: Bool = false {
         didSet {

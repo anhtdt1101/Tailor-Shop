@@ -9,7 +9,7 @@ import UIKit
 
 class AddNewClientVC: BaseVC {
     @IBOutlet weak var tableView: STableView!
-    @IBOutlet weak var addNewBtn: VVButton!
+    @IBOutlet weak var addNewBtn: UIButton!
     
     var dataModel = ClientModel()
     var isEdit: Bool = false
@@ -153,4 +153,11 @@ extension UIAlertController {
         UIAlertController.aletrWindow.isHidden = true
     }
     
+}
+
+extension UIButton {
+    func blueBtnDisable(_ isDisable: Bool) {
+        self.backgroundColor = isDisable ? UIColor.cPlaceHolder : UIColor.cBlue
+        self.isEnabled = !isDisable
+    }
 }

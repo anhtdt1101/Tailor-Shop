@@ -1,5 +1,5 @@
 //
-//  VVDetailsQRCell.swift
+//  DetailsInputCell.swift
 //  VVBASE
 //
 //  Created by Tien Anh Tran Duc on 11/07/2022.
@@ -20,7 +20,7 @@ struct DetailCellModel {
     var isEnable: Bool = true
 }
 
-class VVDetailsQRCell: STableViewCell {
+class DetailsInputCell: STableViewCell {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var textField: VVTextFieldFloat!
     
@@ -70,7 +70,7 @@ class VVDetailsQRCell: STableViewCell {
     
 }
 
-extension VVDetailsQRCell: UITextViewDelegate{
+extension DetailsInputCell: UITextViewDelegate{
     func textViewDidChange(_ textView: UITextView) {
         if let text = textView.text {
             self.dataModel.onTextView?(text)
