@@ -24,8 +24,8 @@
 		260CB05828ADFC140062638C /* ImageUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260CB05528ADFC130062638C /* ImageUI.xcassets */; };
 		260CB06328ADFC1F0062638C /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB05C28ADFC1F0062638C /* ClientCell.swift */; };
 		260CB06428ADFC1F0062638C /* ClientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB05D28ADFC1F0062638C /* ClientCell.xib */; };
-		260CB06528ADFC1F0062638C /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB05E28ADFC1F0062638C /* HomeVC.xib */; };
-		260CB06628ADFC1F0062638C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB05F28ADFC1F0062638C /* HomeVC.swift */; };
+		260CB06528ADFC1F0062638C /* ClientManageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB05E28ADFC1F0062638C /* ClientManageVC.xib */; };
+		260CB06628ADFC1F0062638C /* ClientManageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB05F28ADFC1F0062638C /* ClientManageVC.swift */; };
 		260CB06728ADFC1F0062638C /* AddNewClientVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB06128ADFC1F0062638C /* AddNewClientVC.xib */; };
 		260CB06828ADFC1F0062638C /* AddNewClientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB06228ADFC1F0062638C /* AddNewClientVC.swift */; };
 		260CB0A328ADFC230062638C /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB06A28ADFC230062638C /* BaseVC.swift */; };
@@ -54,6 +54,9 @@
 		4556AA662A0CA03100709140 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 454D65682A08FB6200EF2ECD /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		455E5FD92A0CD00400BE680C /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455E5FD72A0CCFE200BE680C /* IQKeyboardManagerSwift.framework */; };
 		455E5FDA2A0CD00400BE680C /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 455E5FD72A0CCFE200BE680C /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		455E5FDD2A0CE5B800BE680C /* BasePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455E5FDC2A0CE5B800BE680C /* BasePopup.swift */; };
+		455E5FE02A0CE7F400BE680C /* PickTypePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455E5FDF2A0CE7F400BE680C /* PickTypePopup.swift */; };
+		455E5FE22A0CE7F900BE680C /* PickTypePopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 455E5FE12A0CE7F900BE680C /* PickTypePopup.xib */; };
 		45643D6D2A08EA6E00616583 /* STableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6A2A08EA6E00616583 /* STableView.swift */; };
 		45643D6E2A08EA6E00616583 /* STableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6B2A08EA6E00616583 /* STableHeaderView.swift */; };
 		45643D6F2A08EA6E00616583 /* STableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6C2A08EA6E00616583 /* STableViewCell.swift */; };
@@ -102,8 +105,8 @@
 		260CB05528ADFC130062638C /* ImageUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageUI.xcassets; sourceTree = "<group>"; };
 		260CB05C28ADFC1F0062638C /* ClientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
 		260CB05D28ADFC1F0062638C /* ClientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientCell.xib; sourceTree = "<group>"; };
-		260CB05E28ADFC1F0062638C /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
-		260CB05F28ADFC1F0062638C /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		260CB05E28ADFC1F0062638C /* ClientManageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientManageVC.xib; sourceTree = "<group>"; };
+		260CB05F28ADFC1F0062638C /* ClientManageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientManageVC.swift; sourceTree = "<group>"; };
 		260CB06128ADFC1F0062638C /* AddNewClientVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewClientVC.xib; sourceTree = "<group>"; };
 		260CB06228ADFC1F0062638C /* AddNewClientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewClientVC.swift; sourceTree = "<group>"; };
 		260CB06A28ADFC230062638C /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -129,6 +132,9 @@
 		454D65672A08FB6200EF2ECD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		454D65682A08FB6200EF2ECD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		455E5FD72A0CCFE200BE680C /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
+		455E5FDC2A0CE5B800BE680C /* BasePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePopup.swift; sourceTree = "<group>"; };
+		455E5FDF2A0CE7F400BE680C /* PickTypePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickTypePopup.swift; sourceTree = "<group>"; };
+		455E5FE12A0CE7F900BE680C /* PickTypePopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickTypePopup.xib; sourceTree = "<group>"; };
 		45643D6A2A08EA6E00616583 /* STableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableView.swift; sourceTree = "<group>"; };
 		45643D6B2A08EA6E00616583 /* STableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableHeaderView.swift; sourceTree = "<group>"; };
 		45643D6C2A08EA6E00616583 /* STableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableViewCell.swift; sourceTree = "<group>"; };
@@ -226,8 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				260CB05B28ADFC1F0062638C /* Cell */,
-				260CB05E28ADFC1F0062638C /* HomeVC.xib */,
-				260CB05F28ADFC1F0062638C /* HomeVC.swift */,
+				260CB05E28ADFC1F0062638C /* ClientManageVC.xib */,
+				260CB05F28ADFC1F0062638C /* ClientManageVC.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 		260CB07A28ADFC230062638C /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				455E5FDB2A0CE5A900BE680C /* Popup */,
 				260CB07B28ADFC230062638C /* TableView */,
 				260CB08528ADFC230062638C /* TextView */,
 				260CB08928ADFC230062638C /* CollectionView */,
@@ -383,6 +390,7 @@
 		2657FEF728AF94D9003E7161 /* AddProduct */ = {
 			isa = PBXGroup;
 			children = (
+				455E5FDE2A0CE7DA00BE680C /* PickTypePopup */,
 				2657FF0928AFA155003E7161 /* Cell */,
 				2657FEF828AF94F5003E7161 /* AddProductsVC.swift */,
 				2657FEF928AF94F5003E7161 /* AddProductsVC.xib */,
@@ -407,6 +415,23 @@
 				454D65682A08FB6200EF2ECD /* RealmSwift.framework */,
 			);
 			path = Libs;
+			sourceTree = "<group>";
+		};
+		455E5FDB2A0CE5A900BE680C /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				455E5FDC2A0CE5B800BE680C /* BasePopup.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		455E5FDE2A0CE7DA00BE680C /* PickTypePopup */ = {
+			isa = PBXGroup;
+			children = (
+				455E5FDF2A0CE7F400BE680C /* PickTypePopup.swift */,
+				455E5FE12A0CE7F900BE680C /* PickTypePopup.xib */,
+			);
+			path = PickTypePopup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,6 +497,7 @@
 				2657FF0D28AFA155003E7161 /* TypeClothesCell.xib in Resources */,
 				260CAFA828ADFB2A0062638C /* LaunchScreen.storyboard in Resources */,
 				451AF0662A0C957E00E0C113 /* TextFieldBox.xib in Resources */,
+				455E5FE22A0CE7F900BE680C /* PickTypePopup.xib in Resources */,
 				260CB05628ADFC140062638C /* Navbar&Tabbar.xcassets in Resources */,
 				2657FEF628AF8AEB003E7161 /* ProductsCell.xib in Resources */,
 				260CB06728ADFC1F0062638C /* AddNewClientVC.xib in Resources */,
@@ -480,7 +506,7 @@
 				260CB0D428AE241F0062638C /* DetailsInputCell.xib in Resources */,
 				260CB0C728ADFC230062638C /* NavBarView.xib in Resources */,
 				260CB0EB28AE3E9C0062638C /* ProfileClientVC.xib in Resources */,
-				260CB06528ADFC1F0062638C /* HomeVC.xib in Resources */,
+				260CB06528ADFC1F0062638C /* ClientManageVC.xib in Resources */,
 				260CAFA328ADFB290062638C /* Main.storyboard in Resources */,
 				260CB05728ADFC140062638C /* Assets.xcassets in Resources */,
 				45643D722A08EAA800616583 /* TextView.xib in Resources */,
@@ -499,6 +525,7 @@
 				260CB0EA28AE3E9C0062638C /* ProfileClientVC.swift in Sources */,
 				451AF05A2A0C88A300E0C113 /* TextField.swift in Sources */,
 				260CB04B28ADFB560062638C /* DatabaseManager.swift in Sources */,
+				455E5FDD2A0CE5B800BE680C /* BasePopup.swift in Sources */,
 				45643D762A08EB0A00616583 /* SCollectionView.swift in Sources */,
 				451AF0682A0C9E7D00E0C113 /* Number+Extension.swift in Sources */,
 				45643D772A08EB0A00616583 /* SCollectionViewCell.swift in Sources */,
@@ -510,11 +537,12 @@
 				260CB04928ADFB560062638C /* ClientModel.swift in Sources */,
 				260CB06828ADFC1F0062638C /* AddNewClientVC.swift in Sources */,
 				2657FF0C28AFA155003E7161 /* TypeClothesCell.swift in Sources */,
-				260CB06628ADFC1F0062638C /* HomeVC.swift in Sources */,
+				260CB06628ADFC1F0062638C /* ClientManageVC.swift in Sources */,
 				260CB0A628ADFC230062638C /* UIColor+Extension.swift in Sources */,
 				260CB0A428ADFC230062638C /* VVConstant.swift in Sources */,
 				260CB04728ADFB560062638C /* PantsModel.swift in Sources */,
 				45643D6D2A08EA6E00616583 /* STableView.swift in Sources */,
+				455E5FE02A0CE7F400BE680C /* PickTypePopup.swift in Sources */,
 				45643D732A08EAA800616583 /* TextView.swift in Sources */,
 				260CB04628ADFB560062638C /* ShirtModel.swift in Sources */,
 				260CB0C628ADFC230062638C /* NavBarView.swift in Sources */,

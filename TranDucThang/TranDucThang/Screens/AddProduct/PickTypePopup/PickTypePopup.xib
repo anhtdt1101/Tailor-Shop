@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickTypePopup" customModule="TranDucThang" customModuleProvider="target">
+            <connections>
+                <outlet property="vContent" destination="iN0-l3-epB" id="RuP-pJ-Sr3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="306"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loại sản phẩm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNK-Hd-P7D">
+                    <rect key="frame" x="165" y="26" width="123" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-Bn-g9o">
+                    <rect key="frame" x="24" y="143" width="405" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="8Qy-NA-6ch"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Áo">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="vvRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="vvBorderColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="vvBorderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didSelectShirt:" destination="-1" eventType="touchUpInside" id="ecq-zV-QbF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZS-zm-ApD">
+                    <rect key="frame" x="24" y="215" width="405" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="dnV-oS-4Jv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Vest">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="vvRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="vvBorderColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="vvBorderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didSelectVest:" destination="-1" eventType="touchUpInside" id="vTa-xz-RKw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRM-T6-nwy">
+                    <rect key="frame" x="24" y="71" width="405" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="WgC-tt-vtT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Quần">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="vvRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="vvBorderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="vvBorderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didSelectPants:" destination="-1" eventType="touchUpInside" id="TPO-Y9-s6r"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="DZS-zm-ApD" firstAttribute="top" secondItem="DT3-Bn-g9o" secondAttribute="bottom" constant="16" id="7S9-4O-vp3"/>
+                <constraint firstAttribute="trailing" secondItem="SRM-T6-nwy" secondAttribute="trailing" constant="24" id="Cjf-5X-8Fc"/>
+                <constraint firstItem="DT3-Bn-g9o" firstAttribute="top" secondItem="SRM-T6-nwy" secondAttribute="bottom" constant="16" id="JVj-gx-QTq"/>
+                <constraint firstAttribute="trailing" secondItem="DZS-zm-ApD" secondAttribute="trailing" constant="24" id="KEV-05-gdy"/>
+                <constraint firstItem="pNK-Hd-P7D" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NUA-DH-pAm"/>
+                <constraint firstItem="SRM-T6-nwy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="c8n-g8-RaV"/>
+                <constraint firstAttribute="trailing" secondItem="DT3-Bn-g9o" secondAttribute="trailing" constant="24" id="fpb-dB-Kdc"/>
+                <constraint firstItem="pNK-Hd-P7D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="lry-Ue-T3b"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="DZS-zm-ApD" secondAttribute="bottom" constant="16" id="mq0-mp-64I"/>
+                <constraint firstItem="DT3-Bn-g9o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="pes-wh-IcD"/>
+                <constraint firstItem="DZS-zm-ApD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="piD-oI-ePs"/>
+                <constraint firstItem="SRM-T6-nwy" firstAttribute="top" secondItem="pNK-Hd-P7D" secondAttribute="bottom" constant="24" id="rgx-KP-Jyc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="222.13740458015266" y="64.788732394366207"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

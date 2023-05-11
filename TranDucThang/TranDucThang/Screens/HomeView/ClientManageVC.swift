@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeVC: BaseVC {
+class ClientManageVC: BaseVC {
     @IBOutlet weak var tableView: STableView!
     @IBOutlet weak var searchTF: TextField!
     
@@ -31,9 +31,9 @@ class HomeVC: BaseVC {
     }
     
     override func setupNavbarView() {
-        navBarView?.title = "Danh sách"
+        navBarView?.title = "Danh sách khách hàng"
         navBarView?.isHiddenLeft = true
-        navBarView?.right1Image = UIImage(systemName: "plus")?.withTintColor(UIColor.gray)
+        navBarView?.right1Image = UIImage(systemName: "plus")
         navBarView?.onRight1Action = { [weak self] in
             let vc = AddNewClientVC()
             vc.onBackUpdate = { [weak self] isAddNew in

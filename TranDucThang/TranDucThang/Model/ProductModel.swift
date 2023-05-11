@@ -13,6 +13,7 @@ enum TypeProduct {
     case vest
     case shirt
     case pants
+    case none
     
     var title: String {
         switch self {
@@ -22,6 +23,8 @@ enum TypeProduct {
             return "Áo Sơ Mi"
         case .pants:
             return "Quần"
+        case .none:
+            return ""
         }
     }
     
@@ -33,6 +36,8 @@ enum TypeProduct {
             return 0
         case .pants:
             return 1
+        case .none:
+            return -1
         }
     }
     

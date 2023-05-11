@@ -98,7 +98,7 @@ class ProfileClientVC: BaseVC {
             case 2:
                 tableView.datas = client.listVest.sorted(by: { $0.status < $1.status })
             default:
-                tableView.datas = dataProduct
+                tableView.datas = dataProduct.sorted(by: { $0.status < $1.status })
             }
         }
     }

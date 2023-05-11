@@ -13,8 +13,7 @@ class AddProductsVC: BaseVC {
     @IBOutlet weak var typeProductBtn: UIButton!
     @IBOutlet weak var emptyLbl: UILabel!
     
-    var indexSelected: Int = -1
-    let dataArr: [TypeProduct] = [.shirt,.pants,.vest]
+    var currentType: TypeProduct = .none
     var dataTBV: [DetailCellModel] = []
     
     var client: ClientModel?
@@ -155,21 +154,21 @@ class AddProductsVC: BaseVC {
         }
         if isEdit {
             if let dataProduct = self.dataProduct as? ProductModel{
-                indexSelected = dataProduct.product
+                currentType = TypeProduct.typeProduct(dataProduct.product)
             }
         }
-        if indexSelected != -1{
+        if currentType != .none{
             tableView.cPaddingBottom?.constant = 64
-            let type = dataArr[indexSelected]
-            switch type {
+            switch currentType {
             case .pants:
                 dataTBV = [waist,butt,long,trouserLeg,thigh,calf,crotch]
             case .vest:
                 dataTBV = [total,long,chest,bodyWaist,butt,arm,withinArmpit,hand,horizontalFront,horizontalBack,necklace]
             case .shirt:
                 dataTBV = [shoulder,chest,shirtLength,sleeveLenght,necklace,bodyWaist,arm]
+            default: break
             }
-            navBarView?.title = "\(isEdit ? "Sửa" : "Thêm") \(type.title)"
+            navBarView?.title = "\(isEdit ? "Sửa" : "Thêm") \(currentType.title)"
             dataTBV.append(contentsOf: [pickUpDate,productColor,price,deposit,note])
             emptyLbl.isHidden = true
             tableView.datas = dataTBV
@@ -191,8 +190,7 @@ class AddProductsVC: BaseVC {
     @IBAction func didSelectAdd(_ sender: Any) {
         if isEdit{
             UIAlertController.showConfirm(self,"Bố có muốn cập nhật sản phẩm này không") {
-                let type = self.dataArr[self.indexSelected]
-                switch type {
+                switch self.currentType {
                 case .pants:
                     if let dataProduct = self.dataProduct as? PantsModel{
                         DatabaseManager.update(dataProduct, with: self.dataUpdate.toDictPants()) { [weak self] isSuccess in
@@ -212,13 +210,13 @@ class AddProductsVC: BaseVC {
                             self?.didUpdate(isSuccess)
                         }
                     }
+                default: break
                 }
             }
         } else {
             UIAlertController.showConfirm(self,"Bố có muốn thêm sản phẩm này không") {
                 if let client = self.client {
-                    let type = self.dataArr[self.indexSelected]
-                    switch type {
+                    switch self.currentType {
                     case .pants:
                         DatabaseManager.addPants(client, self.dataUpdate.toPants()) { [weak self] isSuccess in
                             self?.didUpdate(isSuccess)
@@ -231,6 +229,7 @@ class AddProductsVC: BaseVC {
                         DatabaseManager.addShirt(client, self.dataUpdate.toShirts()){ [weak self] isSuccess in
                             self?.didUpdate(isSuccess)
                         }
+                    default: break
                     }
                 }
             }
@@ -250,34 +249,22 @@ class AddProductsVC: BaseVC {
     }
     
     @IBAction func didSelectType(_ sender: Any) {
-//        if isEdit{
-//            UIAlertController.showConfirm(self,"Bố có muốn chuyển trạng thái không") {
-//                if let dataProduct = self.dataProduct as? ProductModel {
-//                    DatabaseManager.updateStatus(dataProduct) { [weak self] isSuccess in
-//                        let title = dataProduct.status == "0" ? "Khách hàng đã lấy" : "Khách hàng Chưa lấy"
-//                        self?.typeProductBtn.setTitle(title, for: .normal)
-//                        self?.isUpdate = true
-//                        self?.onUpdate?(self?.isUpdate ?? false)
-//                    }
-//                }
-//            }
-//            
-//        } else {
-//            let didSelectRow = { [weak self] (service: TypeProduct, index: IndexPath, controller: UIViewController) in
-//                controller.dismiss(animated: true)
-//                guard let wSelf = self else { return }
-//                wSelf.indexSelected = index.row
-//                wSelf.didSelectType()
-//            }
-//            let configure = {[weak self] (cell: TypeClothesCell, item: TypeProduct, index: Int, viewcontroller: UIViewController) in
-//                cell.serviceLbl.text = item.title
-//                cell.isChecked = (self?.indexSelected == index)
-//            }
-//            let billStatis = VVGenericTableView(items: dataArr, title: "Kiểu sản phẩm", configure: configure)
-//            billStatis.maximumSearchLenght = 20
-//            billStatis.canUpdateLayoutWhenSearch = false
-//            billStatis.didSelectRow = didSelectRow
-//            self.presentPanModal(billStatis)
-//        }
+        if isEdit{
+            UIAlertController.showConfirm(self,"Bố có muốn chuyển trạng thái không") {
+                if let dataProduct = self.dataProduct as? ProductModel {
+                    DatabaseManager.updateStatus(dataProduct) { [weak self] isSuccess in
+                        let title = dataProduct.status == "0" ? "Khách hàng đã lấy" : "Khách hàng Chưa lấy"
+                        self?.typeProductBtn.setTitle(title, for: .normal)
+                        self?.isUpdate = true
+                        self?.onUpdate?(self?.isUpdate ?? false)
+                    }
+                }
+            }
+        } else {
+            PickTypePopup.show { [weak self] type in
+                self?.currentType = type
+                self?.didSelectType()
+            }
+        }
     }
 }
