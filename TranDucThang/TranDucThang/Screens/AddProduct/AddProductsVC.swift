@@ -8,7 +8,7 @@
 import UIKit
 
 class AddProductsVC: BaseVC {
-    @IBOutlet weak var saveBtn: VVButton!
+    @IBOutlet weak var saveBtn: UIButton!
     @IBOutlet weak var tableView: STableView!
     @IBOutlet weak var typeProductBtn: UIButton!
     @IBOutlet weak var emptyLbl: UILabel!
@@ -250,34 +250,34 @@ class AddProductsVC: BaseVC {
     }
     
     @IBAction func didSelectType(_ sender: Any) {
-        if isEdit{
-            UIAlertController.showConfirm(self,"Bố có muốn chuyển trạng thái không") {
-                if let dataProduct = self.dataProduct as? ProductModel {
-                    DatabaseManager.updateStatus(dataProduct) { [weak self] isSuccess in
-                        let title = dataProduct.status == "0" ? "Khách hàng đã lấy" : "Khách hàng Chưa lấy"
-                        self?.typeProductBtn.setTitle(title, for: .normal)
-                        self?.isUpdate = true
-                        self?.onUpdate?(self?.isUpdate ?? false)
-                    }
-                }
-            }
-            
-        } else {
-            let didSelectRow = { [weak self] (service: TypeProduct, index: IndexPath, controller: UIViewController) in
-                controller.dismiss(animated: true)
-                guard let wSelf = self else { return }
-                wSelf.indexSelected = index.row
-                wSelf.didSelectType()
-            }
-            let configure = {[weak self] (cell: TypeClothesCell, item: TypeProduct, index: Int, viewcontroller: UIViewController) in
-                cell.serviceLbl.text = item.title
-                cell.isChecked = (self?.indexSelected == index)
-            }
-            let billStatis = VVGenericTableView(items: dataArr, title: "Kiểu sản phẩm", configure: configure)
-            billStatis.maximumSearchLenght = 20
-            billStatis.canUpdateLayoutWhenSearch = false
-            billStatis.didSelectRow = didSelectRow
-            self.presentPanModal(billStatis)
-        }
+//        if isEdit{
+//            UIAlertController.showConfirm(self,"Bố có muốn chuyển trạng thái không") {
+//                if let dataProduct = self.dataProduct as? ProductModel {
+//                    DatabaseManager.updateStatus(dataProduct) { [weak self] isSuccess in
+//                        let title = dataProduct.status == "0" ? "Khách hàng đã lấy" : "Khách hàng Chưa lấy"
+//                        self?.typeProductBtn.setTitle(title, for: .normal)
+//                        self?.isUpdate = true
+//                        self?.onUpdate?(self?.isUpdate ?? false)
+//                    }
+//                }
+//            }
+//            
+//        } else {
+//            let didSelectRow = { [weak self] (service: TypeProduct, index: IndexPath, controller: UIViewController) in
+//                controller.dismiss(animated: true)
+//                guard let wSelf = self else { return }
+//                wSelf.indexSelected = index.row
+//                wSelf.didSelectType()
+//            }
+//            let configure = {[weak self] (cell: TypeClothesCell, item: TypeProduct, index: Int, viewcontroller: UIViewController) in
+//                cell.serviceLbl.text = item.title
+//                cell.isChecked = (self?.indexSelected == index)
+//            }
+//            let billStatis = VVGenericTableView(items: dataArr, title: "Kiểu sản phẩm", configure: configure)
+//            billStatis.maximumSearchLenght = 20
+//            billStatis.canUpdateLayoutWhenSearch = false
+//            billStatis.didSelectRow = didSelectRow
+//            self.presentPanModal(billStatis)
+//        }
     }
 }

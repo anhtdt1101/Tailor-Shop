@@ -319,14 +319,6 @@ extension UIStackView {
 }
 //MARK: For xib
 extension UIView {
-    @IBInspectable var vvCornerAHalf:Bool {
-        get {
-            return false
-        }
-        set{
-            self.vvRadius = self.height/2.0
-        }
-    }
     @IBInspectable var vvRadius:CGFloat {
         get {
             return 0
@@ -356,7 +348,7 @@ extension UIView {
         set {
             if newValue {
                 self.layer.masksToBounds = false
-                self.layer.shadowColor = UIColor.cBlack.cgColor
+                self.layer.shadowColor = UIColor.black.cgColor
                 self.layer.shadowOffset = .vvSize(0, 2)
                 self.layer.shadowRadius = 11
                 self.layer.shadowOpacity = 0.1

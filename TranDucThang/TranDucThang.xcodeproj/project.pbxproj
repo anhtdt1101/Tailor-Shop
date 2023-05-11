@@ -32,14 +32,8 @@
 		260CB0A428ADFC230062638C /* VVConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB06B28ADFC230062638C /* VVConstant.swift */; };
 		260CB0A628ADFC230062638C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB06E28ADFC230062638C /* UIColor+Extension.swift */; };
 		260CB0A728ADFC230062638C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB06F28ADFC230062638C /* Date+Extension.swift */; };
-		260CB0BF28ADFC230062638C /* VVTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB08F28ADFC230062638C /* VVTextField.swift */; };
-		260CB0C128ADFC230062638C /* DyniamicTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB09128ADFC230062638C /* DyniamicTF.swift */; };
-		260CB0C228ADFC230062638C /* VVTextFieldFloat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB09228ADFC230062638C /* VVTextFieldFloat.xib */; };
 		260CB0C628ADFC230062638C /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB09928ADFC230062638C /* NavBarView.swift */; };
 		260CB0C728ADFC230062638C /* NavBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB09A28ADFC230062638C /* NavBarView.xib */; };
-		260CB0CB28ADFC230062638C /* VVThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB0A028ADFC230062638C /* VVThemeManager.swift */; };
-		260CB0CC28ADFC230062638C /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB0A128ADFC230062638C /* UIColor+Theme.swift */; };
-		260CB0CD28ADFC230062638C /* UIFont+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB0A228ADFC230062638C /* UIFont+Theme.swift */; };
 		260CB0D328AE241F0062638C /* DetailsInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB0D128AE241F0062638C /* DetailsInputCell.swift */; };
 		260CB0D428AE241F0062638C /* DetailsInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB0D228AE241F0062638C /* DetailsInputCell.xib */; };
 		260CB0EA28AE3E9C0062638C /* ProfileClientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB0E828AE3E9C0062638C /* ProfileClientVC.swift */; };
@@ -50,8 +44,14 @@
 		2657FEFB28AF94F5003E7161 /* AddProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2657FEF928AF94F5003E7161 /* AddProductsVC.xib */; };
 		2657FF0C28AFA155003E7161 /* TypeClothesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FF0A28AFA155003E7161 /* TypeClothesCell.swift */; };
 		2657FF0D28AFA155003E7161 /* TypeClothesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2657FF0B28AFA155003E7161 /* TypeClothesCell.xib */; };
-		454D65692A08FB6200EF2ECD /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454D65672A08FB6200EF2ECD /* Realm.framework */; };
-		454D656A2A08FB6200EF2ECD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454D65682A08FB6200EF2ECD /* RealmSwift.framework */; };
+		451AF05A2A0C88A300E0C113 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451AF0592A0C88A300E0C113 /* TextField.swift */; };
+		451AF0642A0C957400E0C113 /* TextFieldBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451AF0632A0C957400E0C113 /* TextFieldBox.swift */; };
+		451AF0662A0C957E00E0C113 /* TextFieldBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451AF0652A0C957E00E0C113 /* TextFieldBox.xib */; };
+		451AF0682A0C9E7D00E0C113 /* Number+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451AF0672A0C9E7D00E0C113 /* Number+Extension.swift */; };
+		4556AA622A0CA03000709140 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454D65672A08FB6200EF2ECD /* Realm.framework */; };
+		4556AA632A0CA03000709140 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 454D65672A08FB6200EF2ECD /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4556AA652A0CA03100709140 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454D65682A08FB6200EF2ECD /* RealmSwift.framework */; };
+		4556AA662A0CA03100709140 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 454D65682A08FB6200EF2ECD /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45643D6D2A08EA6E00616583 /* STableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6A2A08EA6E00616583 /* STableView.swift */; };
 		45643D6E2A08EA6E00616583 /* STableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6B2A08EA6E00616583 /* STableHeaderView.swift */; };
 		45643D6F2A08EA6E00616583 /* STableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6C2A08EA6E00616583 /* STableViewCell.swift */; };
@@ -65,12 +65,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		260CB04F28ADFC020062638C /* Embed Frameworks */ = {
+		4556AA642A0CA03000709140 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4556AA662A0CA03100709140 /* RealmSwift.framework in Embed Frameworks */,
+				4556AA632A0CA03000709140 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,14 +107,8 @@
 		260CB06B28ADFC230062638C /* VVConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVConstant.swift; sourceTree = "<group>"; };
 		260CB06E28ADFC230062638C /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		260CB06F28ADFC230062638C /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		260CB08F28ADFC230062638C /* VVTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVTextField.swift; sourceTree = "<group>"; };
-		260CB09128ADFC230062638C /* DyniamicTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DyniamicTF.swift; sourceTree = "<group>"; };
-		260CB09228ADFC230062638C /* VVTextFieldFloat.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVTextFieldFloat.xib; sourceTree = "<group>"; };
 		260CB09928ADFC230062638C /* NavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		260CB09A28ADFC230062638C /* NavBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavBarView.xib; sourceTree = "<group>"; };
-		260CB0A028ADFC230062638C /* VVThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVThemeManager.swift; sourceTree = "<group>"; };
-		260CB0A128ADFC230062638C /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
-		260CB0A228ADFC230062638C /* UIFont+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Theme.swift"; sourceTree = "<group>"; };
 		260CB0D128AE241F0062638C /* DetailsInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInputCell.swift; sourceTree = "<group>"; };
 		260CB0D228AE241F0062638C /* DetailsInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsInputCell.xib; sourceTree = "<group>"; };
 		260CB0E828AE3E9C0062638C /* ProfileClientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileClientVC.swift; sourceTree = "<group>"; };
@@ -123,6 +119,10 @@
 		2657FEF928AF94F5003E7161 /* AddProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductsVC.xib; sourceTree = "<group>"; };
 		2657FF0A28AFA155003E7161 /* TypeClothesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeClothesCell.swift; sourceTree = "<group>"; };
 		2657FF0B28AFA155003E7161 /* TypeClothesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeClothesCell.xib; sourceTree = "<group>"; };
+		451AF0592A0C88A300E0C113 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		451AF0632A0C957400E0C113 /* TextFieldBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBox.swift; sourceTree = "<group>"; };
+		451AF0652A0C957E00E0C113 /* TextFieldBox.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldBox.xib; sourceTree = "<group>"; };
+		451AF0672A0C9E7D00E0C113 /* Number+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+Extension.swift"; sourceTree = "<group>"; };
 		454D65672A08FB6200EF2ECD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		454D65682A08FB6200EF2ECD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		45643D6A2A08EA6E00616583 /* STableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableView.swift; sourceTree = "<group>"; };
@@ -142,8 +142,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454D65692A08FB6200EF2ECD /* Realm.framework in Frameworks */,
-				454D656A2A08FB6200EF2ECD /* RealmSwift.framework in Frameworks */,
+				4556AA652A0CA03100709140 /* RealmSwift.framework in Frameworks */,
+				4556AA622A0CA03000709140 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +254,6 @@
 				260CB06B28ADFC230062638C /* VVConstant.swift */,
 				260CB06C28ADFC230062638C /* Extensions */,
 				260CB07A28ADFC230062638C /* Controls */,
-				260CB09F28ADFC230062638C /* Themes */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -262,6 +261,7 @@
 		260CB06C28ADFC230062638C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				451AF0672A0C9E7D00E0C113 /* Number+Extension.swift */,
 				45EA0F212A0B3A2D00F8BCE6 /* UIView+Extension.swift */,
 				45EA0F1F2A0B3A2100F8BCE6 /* String+Extension.swift */,
 				45EA0F232A0B3A3400F8BCE6 /* UIViewController+Extension.swift */,
@@ -314,9 +314,9 @@
 		260CB08E28ADFC230062638C /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
-				260CB08F28ADFC230062638C /* VVTextField.swift */,
-				260CB09128ADFC230062638C /* DyniamicTF.swift */,
-				260CB09228ADFC230062638C /* VVTextFieldFloat.xib */,
+				451AF0592A0C88A300E0C113 /* TextField.swift */,
+				451AF0632A0C957400E0C113 /* TextFieldBox.swift */,
+				451AF0652A0C957E00E0C113 /* TextFieldBox.xib */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -336,16 +336,6 @@
 				260CB09A28ADFC230062638C /* NavBarView.xib */,
 			);
 			path = NavBarView;
-			sourceTree = "<group>";
-		};
-		260CB09F28ADFC230062638C /* Themes */ = {
-			isa = PBXGroup;
-			children = (
-				260CB0A028ADFC230062638C /* VVThemeManager.swift */,
-				260CB0A128ADFC230062638C /* UIColor+Theme.swift */,
-				260CB0A228ADFC230062638C /* UIFont+Theme.swift */,
-			);
-			path = Themes;
 			sourceTree = "<group>";
 		};
 		260CB0D028AE23F70062638C /* Cell */ = {
@@ -423,7 +413,7 @@
 				260CAF9428ADFB290062638C /* Sources */,
 				260CAF9528ADFB290062638C /* Frameworks */,
 				260CAF9628ADFB290062638C /* Resources */,
-				260CB04F28ADFC020062638C /* Embed Frameworks */,
+				4556AA642A0CA03000709140 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -475,9 +465,9 @@
 				2657FEFB28AF94F5003E7161 /* AddProductsVC.xib in Resources */,
 				2657FF0D28AFA155003E7161 /* TypeClothesCell.xib in Resources */,
 				260CAFA828ADFB2A0062638C /* LaunchScreen.storyboard in Resources */,
+				451AF0662A0C957E00E0C113 /* TextFieldBox.xib in Resources */,
 				260CB05628ADFC140062638C /* Navbar&Tabbar.xcassets in Resources */,
 				2657FEF628AF8AEB003E7161 /* ProductsCell.xib in Resources */,
-				260CB0C228ADFC230062638C /* VVTextFieldFloat.xib in Resources */,
 				260CB06728ADFC1F0062638C /* AddNewClientVC.xib in Resources */,
 				260CB06428ADFC1F0062638C /* ClientCell.xib in Resources */,
 				260CB05828ADFC140062638C /* ImageUI.xcassets in Resources */,
@@ -500,15 +490,14 @@
 			files = (
 				260CAFA028ADFB290062638C /* ViewController.swift in Sources */,
 				45643D6E2A08EA6E00616583 /* STableHeaderView.swift in Sources */,
-				260CB0CC28ADFC230062638C /* UIColor+Theme.swift in Sources */,
-				260CB0CB28ADFC230062638C /* VVThemeManager.swift in Sources */,
 				260CB0EA28AE3E9C0062638C /* ProfileClientVC.swift in Sources */,
+				451AF05A2A0C88A300E0C113 /* TextField.swift in Sources */,
 				260CB04B28ADFB560062638C /* DatabaseManager.swift in Sources */,
 				45643D762A08EB0A00616583 /* SCollectionView.swift in Sources */,
+				451AF0682A0C9E7D00E0C113 /* Number+Extension.swift in Sources */,
 				45643D772A08EB0A00616583 /* SCollectionViewCell.swift in Sources */,
 				45EA0F242A0B3A3400F8BCE6 /* UIViewController+Extension.swift in Sources */,
 				260CB0A328ADFC230062638C /* BaseVC.swift in Sources */,
-				260CB0BF28ADFC230062638C /* VVTextField.swift in Sources */,
 				2657FEF528AF8AEB003E7161 /* ProductsCell.swift in Sources */,
 				260CB04A28ADFB560062638C /* VestModel.swift in Sources */,
 				2657FEFA28AF94F5003E7161 /* AddProductsVC.swift in Sources */,
@@ -523,17 +512,16 @@
 				45643D732A08EAA800616583 /* TextView.swift in Sources */,
 				260CB04628ADFB560062638C /* ShirtModel.swift in Sources */,
 				260CB0C628ADFC230062638C /* NavBarView.swift in Sources */,
+				451AF0642A0C957400E0C113 /* TextFieldBox.swift in Sources */,
 				260CB06328ADFC1F0062638C /* ClientCell.swift in Sources */,
 				260CB0D328AE241F0062638C /* DetailsInputCell.swift in Sources */,
 				260CAF9C28ADFB290062638C /* AppDelegate.swift in Sources */,
-				260CB0CD28ADFC230062638C /* UIFont+Theme.swift in Sources */,
 				45EA0F202A0B3A2100F8BCE6 /* String+Extension.swift in Sources */,
 				260CAF9E28ADFB290062638C /* SceneDelegate.swift in Sources */,
 				45EA0F222A0B3A2D00F8BCE6 /* UIView+Extension.swift in Sources */,
 				45643D6F2A08EA6E00616583 /* STableViewCell.swift in Sources */,
 				260CB04828ADFB560062638C /* RealmServices.swift in Sources */,
 				260CB0A728ADFC230062638C /* Date+Extension.swift in Sources */,
-				260CB0C128ADFC230062638C /* DyniamicTF.swift in Sources */,
 				260CB04C28ADFB560062638C /* ProductModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

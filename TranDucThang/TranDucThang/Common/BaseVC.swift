@@ -17,7 +17,6 @@ class BaseVC: UIViewController {
         super.viewDidLoad()
         setupNavbarView()
         print("~~~~~\(type(of: self)) viewDidLoad~~~~")
-        UIApplication.shared.statusBarStyle =  (navBarView?.isStyleDefault == true) ? .default : .lightContent
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -44,7 +43,6 @@ class BaseVC: UIViewController {
             guard let _ = navBarView?.superview else {
                 return
             }
-            navBarView?.isStyleDefault = true
             navBarView?.onBackAction = { [weak self] in
                 self?.onNavbarBack()
             }

@@ -33,7 +33,7 @@ class ProductsCell: STableViewCell {
             typeLbl.text = type
             let status = Int(data.status)
             statusLbl.text = (status == 0) ? "Chưa lấy" : "Đã lấy"
-            statusLbl.textColor = (status == 0) ? .red : .cGreen
+            statusLbl.textColor = (status == 0) ? .red : .green
             pickupDateLbl.text = "Ngày lấy \(data.pickUpDate)"
             createDateLbl.text = "Ngày tạo \(data.dateCreated.stringWithFormat("dd/MM/yyyy"))"
             depositLbl.text = "Đã đặt \(Double(data.deposit)?.toCurrecyFormat() ?? "") VND"

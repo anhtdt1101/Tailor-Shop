@@ -9,7 +9,7 @@ import UIKit
 
 class HomeVC: BaseVC {
     @IBOutlet weak var tableView: STableView!
-    @IBOutlet weak var searchTF: DyniamicTF!
+    @IBOutlet weak var searchTF: TextFieldBox!
     
     var dataClient: [ClientModel] = []
     override func viewDidLoad() {

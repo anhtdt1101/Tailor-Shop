@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 class TextView: UIView {
     
-    @IBOutlet var vContent: UIView!
+    @IBOutlet var contentView: UIView!
     @IBOutlet weak var placeHolderLbl: UILabel!
     @IBOutlet weak var textView: UITextView!
     var flag = false
@@ -66,8 +66,8 @@ class TextView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         Bundle.main.loadNibNamed(TextView.identify, owner: self)
-        addSubview(vContent)
-        vContent.snp4Sides()
+        addSubview(contentView)
+        contentView.frame = self.bounds
         flag = true
     }
 }

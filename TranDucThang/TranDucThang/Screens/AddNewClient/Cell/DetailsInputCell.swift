@@ -10,7 +10,7 @@ import UIKit
 struct DetailCellModel {
     var title: String
     var value: String
-    var typeTextField : VVTFType
+    var typeTextField : TFType
     var isValidate: Bool = false
     var isNote: Bool = false
     var errorTF: String = ""
@@ -22,7 +22,7 @@ struct DetailCellModel {
 
 class DetailsInputCell: STableViewCell {
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var textField: DyniamicTF!
+    @IBOutlet weak var textField: TextFieldBox!
     
     var dataModel: DetailCellModel!
     
@@ -50,9 +50,10 @@ class DetailsInputCell: STableViewCell {
             textField.isHidden = false
             textView.isHidden = true
             textField.title = data.title
-            textField.type = data.typeTextField
-            textField.text = data.value
+//            textField.type = data.typeTextField
+//            textField.text = data.value
             textField.tf.isEnabled = data.isEnable
+
             textField.tf.onEdittingChanged = { [weak self] tf in
                 if tf.text?.isEmpty == true && data.isValidate{
                     self?.textField.error = data.errorTF

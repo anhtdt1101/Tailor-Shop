@@ -157,7 +157,7 @@ extension UIAlertController {
 
 extension UIButton {
     func blueBtnDisable(_ isDisable: Bool) {
-        self.backgroundColor = isDisable ? UIColor.cPlaceHolder : UIColor.cBlue
+        self.backgroundColor = isDisable ? UIColor.lightGray : UIColor.blue
         self.isEnabled = !isDisable
     }
 }
