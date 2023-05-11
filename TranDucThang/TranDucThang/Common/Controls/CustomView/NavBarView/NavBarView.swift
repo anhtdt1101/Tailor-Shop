@@ -1,8 +1,8 @@
 //
-//  VVNavBarView.swift
-//  VVBASE
+//  NavBarView.swift
+//  TranDucThang
 //
-//  Created by Anh Nguyen on 01/06/2022.
+//  Created by Tran Duc Tien Anh on 08/05/2023.
 //
 
 import UIKit

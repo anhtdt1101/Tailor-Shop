@@ -1,8 +1,8 @@
 //
 //  Number+Extension.swift
-//  MerchantApp
+//  TranDucThang
 //
-//  Created by Anh Nguyen on 30/05/2022.
+//  Created by Tran Duc Tien Anh on 08/05/2023.
 //
 
 import Foundation
