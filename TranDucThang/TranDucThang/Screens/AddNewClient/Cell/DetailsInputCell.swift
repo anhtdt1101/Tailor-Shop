@@ -21,7 +21,7 @@ struct DetailCellModel {
 }
 
 class DetailsInputCell: STableViewCell {
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textView: TextView!
     @IBOutlet weak var textField: TextFieldBox!
     
     var dataModel: DetailCellModel!
@@ -69,12 +69,4 @@ class DetailsInputCell: STableViewCell {
         }
     }
     
-}
-
-extension DetailsInputCell: UITextViewDelegate{
-    func textViewDidChange(_ textView: UITextView) {
-        if let text = textView.text {
-            self.dataModel.onTextView?(text)
-        }
-    }
 }

@@ -18,32 +18,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="477" height="93"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="157-bG-ux7">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLE-YI-Vxd" customClass="TextView" customModule="TranDucThang" customModuleProvider="target">
                         <rect key="frame" x="16" y="0.0" width="445" height="93"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <inset key="scrollIndicatorInsets" minX="8" minY="4" maxX="8" maxY="4"/>
-                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="bbc_borderColor">
-                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="vvBorderWidth">
-                                <real key="value" value="1"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="vvBorderColor">
-                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="vvRadius">
-                                <real key="value" value="8"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                        <connections>
-                            <outlet property="delegate" destination="-1" id="UFe-2D-xRw"/>
-                        </connections>
-                    </textView>
-                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-Ok-igZ" customClass="DyniamicTF" customModule="TranDucThang" customModuleProvider="target">
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-Ok-igZ" customClass="TextFieldBox" customModule="TranDucThang" customModuleProvider="target">
                         <rect key="frame" x="16" y="8" width="445" height="56"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -52,19 +31,19 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="157-bG-ux7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3Dh-ZK-eYh"/>
-                    <constraint firstItem="157-bG-ux7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="A7W-AI-PL9"/>
-                    <constraint firstAttribute="bottom" secondItem="157-bG-ux7" secondAttribute="bottom" id="Uzq-uz-BRe"/>
+                    <constraint firstAttribute="bottom" secondItem="iLE-YI-Vxd" secondAttribute="bottom" id="BuW-aY-EOO"/>
+                    <constraint firstAttribute="trailing" secondItem="iLE-YI-Vxd" secondAttribute="trailing" constant="16" id="XRg-eb-uZw"/>
                     <constraint firstItem="Hsg-Ok-igZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="alp-1h-97Y"/>
                     <constraint firstItem="Hsg-Ok-igZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bzo-TN-ysR"/>
-                    <constraint firstAttribute="trailing" secondItem="157-bG-ux7" secondAttribute="trailing" constant="16" id="nWg-WL-cAy"/>
+                    <constraint firstItem="iLE-YI-Vxd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cbJ-3u-l9a"/>
+                    <constraint firstItem="iLE-YI-Vxd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="rlM-CI-fZw"/>
                     <constraint firstItem="Hsg-Ok-igZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="wnU-D6-1uc"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="textField" destination="Hsg-Ok-igZ" id="o8s-ny-Xan"/>
-                <outlet property="textView" destination="157-bG-ux7" id="LqE-HU-J8Q"/>
+                <outlet property="textView" destination="iLE-YI-Vxd" id="hY0-jX-fIM"/>
             </connections>
             <point key="canvasLocation" x="251.44927536231887" y="167.07589285714286"/>
         </tableViewCell>

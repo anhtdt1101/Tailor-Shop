@@ -12,6 +12,7 @@ class HomeVC: BaseVC {
     @IBOutlet weak var searchTF: TextFieldBox!
     
     var dataClient: [ClientModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()

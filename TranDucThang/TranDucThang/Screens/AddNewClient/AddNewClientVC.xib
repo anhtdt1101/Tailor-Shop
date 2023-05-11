@@ -33,7 +33,7 @@
                     <rect key="frame" x="0.0" y="98" width="414" height="684"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="cell" value="VVDetailsQRCell"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="cell" value="DetailsInputCell"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isAuto" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </tableView>
