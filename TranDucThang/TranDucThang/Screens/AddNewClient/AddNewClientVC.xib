@@ -70,7 +70,7 @@
                 <constraint firstItem="tOV-yh-PBq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="wA9-sh-rjL"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="tOV-yh-PBq" secondAttribute="bottom" constant="16" id="ywO-bq-mHc"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="133"/>
+            <point key="canvasLocation" x="-375" y="135"/>
         </view>
     </objects>
     <resources>

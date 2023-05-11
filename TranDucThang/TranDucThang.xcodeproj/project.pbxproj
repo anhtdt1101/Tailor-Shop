@@ -52,6 +52,8 @@
 		4556AA632A0CA03000709140 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 454D65672A08FB6200EF2ECD /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4556AA652A0CA03100709140 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454D65682A08FB6200EF2ECD /* RealmSwift.framework */; };
 		4556AA662A0CA03100709140 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 454D65682A08FB6200EF2ECD /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		455E5FD92A0CD00400BE680C /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455E5FD72A0CCFE200BE680C /* IQKeyboardManagerSwift.framework */; };
+		455E5FDA2A0CD00400BE680C /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 455E5FD72A0CCFE200BE680C /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45643D6D2A08EA6E00616583 /* STableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6A2A08EA6E00616583 /* STableView.swift */; };
 		45643D6E2A08EA6E00616583 /* STableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6B2A08EA6E00616583 /* STableHeaderView.swift */; };
 		45643D6F2A08EA6E00616583 /* STableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45643D6C2A08EA6E00616583 /* STableViewCell.swift */; };
@@ -72,6 +74,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4556AA662A0CA03100709140 /* RealmSwift.framework in Embed Frameworks */,
+				455E5FDA2A0CD00400BE680C /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				4556AA632A0CA03000709140 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -125,6 +128,7 @@
 		451AF0672A0C9E7D00E0C113 /* Number+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+Extension.swift"; sourceTree = "<group>"; };
 		454D65672A08FB6200EF2ECD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		454D65682A08FB6200EF2ECD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		455E5FD72A0CCFE200BE680C /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
 		45643D6A2A08EA6E00616583 /* STableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableView.swift; sourceTree = "<group>"; };
 		45643D6B2A08EA6E00616583 /* STableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableHeaderView.swift; sourceTree = "<group>"; };
 		45643D6C2A08EA6E00616583 /* STableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableViewCell.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4556AA652A0CA03100709140 /* RealmSwift.framework in Frameworks */,
+				455E5FD92A0CD00400BE680C /* IQKeyboardManagerSwift.framework in Frameworks */,
 				4556AA622A0CA03000709140 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				454D65672A08FB6200EF2ECD /* Realm.framework */,
+				455E5FD72A0CCFE200BE680C /* IQKeyboardManagerSwift.framework */,
 				454D65682A08FB6200EF2ECD /* RealmSwift.framework */,
 			);
 			path = Libs;
