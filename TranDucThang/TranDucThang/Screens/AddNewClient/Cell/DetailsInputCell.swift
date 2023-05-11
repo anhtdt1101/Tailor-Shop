@@ -50,10 +50,9 @@ class DetailsInputCell: STableViewCell {
             textField.isHidden = false
             textView.isHidden = true
             textField.title = data.title
-//            textField.type = data.typeTextField
-//            textField.text = data.value
+            textField.typeTextField = data.typeTextField
+            textField.tf.text = data.value
             textField.tf.isEnabled = data.isEnable
-
             textField.tf.onEdittingChanged = { [weak self] tf in
                 if tf.text?.isEmpty == true && data.isValidate{
                     self?.textField.error = data.errorTF

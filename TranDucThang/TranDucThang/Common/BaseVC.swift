@@ -53,7 +53,6 @@ class BaseVC: UIViewController {
     }
     
     class func initWithNib() -> Self {
-        
         let bundle = Bundle.main
         let fileManege = FileManager.default
         let nibName = String(describing: self)
@@ -62,13 +61,11 @@ class BaseVC: UIViewController {
                 return initWithNibTemplate()
             }
         }
-        
         if let pathStoryboard = bundle.path(forResource: nibName, ofType: "storyboard") {
             if fileManege.fileExists(atPath: pathStoryboard) {
                 return initWithDefautlStoryboard()
             }
         }
-        
         return initWithNibTemplate()
     }
     

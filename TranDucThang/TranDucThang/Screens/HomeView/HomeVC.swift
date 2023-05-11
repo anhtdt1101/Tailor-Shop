@@ -9,7 +9,7 @@ import UIKit
 
 class HomeVC: BaseVC {
     @IBOutlet weak var tableView: STableView!
-    @IBOutlet weak var searchTF: TextFieldBox!
+    @IBOutlet weak var searchTF: TextField!
     
     var dataClient: [ClientModel] = []
     
@@ -20,7 +20,7 @@ class HomeVC: BaseVC {
     }
 
     func setupTextField(){
-        searchTF.tf.onEdittingChanged = { [weak self] tf in
+        searchTF.onEdittingChanged = { [weak self] tf in
             if let text = tf.text, !text.isEmpty{
             let dataSearch = DatabaseManager.filterClient(text)
             self?.tableView.datas = dataSearch

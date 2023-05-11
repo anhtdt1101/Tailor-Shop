@@ -31,23 +31,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
 }
-//
-//extension UIWindow {
-//    func transitionRootVc(_ rootVc: UIViewController,
-//                          duration: TimeInterval,
-//                          completion: @escaping (_ finished: Bool) -> Void) {
-//        UIView.transition(
-//            with: self,
-//            duration: duration,
-//            options: [UIView.AnimationOptions.transitionFlipFromLeft],
-//            animations: {
-//                let oldState = UIView.areAnimationsEnabled
-//                UIView.setAnimationsEnabled(false)
-//                self.rootViewController = rootVc
-//                UIView.setAnimationsEnabled(oldState)
-//            },
-//        completion: completion)
-//    }
-//}

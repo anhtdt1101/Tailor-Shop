@@ -46,6 +46,15 @@ class TextFieldBox: UIView {
             }
         }
     }
+    
+    var typeTextField: TFType = .none{
+        didSet{
+            if tf.superview != nil {
+                tf.type = typeTextField
+            }
+        }
+    }
+    
     var error:String = "" {
         didSet {
             errorLbl.text = error
@@ -65,6 +74,7 @@ class TextFieldBox: UIView {
         super.init(frame: frame)
         _init()
     }
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         _init()
@@ -130,7 +140,8 @@ class TextFieldBox: UIView {
     }
     
     @IBAction func didSelectClear(_ sender: Any) {
-        
+        self.tf.text = ""
+        tf.sendActions(for: .editingChanged)
     }
 }
 

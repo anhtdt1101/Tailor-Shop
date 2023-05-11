@@ -25,9 +25,6 @@
                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-Ok-igZ" customClass="TextFieldBox" customModule="TranDucThang" customModuleProvider="target">
                         <rect key="frame" x="16" y="8" width="445" height="56"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="56" id="3ax-c9-hH5"/>
-                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
@@ -37,6 +34,7 @@
                     <constraint firstItem="Hsg-Ok-igZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bzo-TN-ysR"/>
                     <constraint firstItem="iLE-YI-Vxd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cbJ-3u-l9a"/>
                     <constraint firstItem="iLE-YI-Vxd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="rlM-CI-fZw"/>
+                    <constraint firstItem="Hsg-Ok-igZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uNU-B0-1m7"/>
                     <constraint firstItem="Hsg-Ok-igZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="wnU-D6-1uc"/>
                 </constraints>
             </tableViewCellContentView>
