@@ -53,13 +53,6 @@
                             <color key="textColor" systemColor="systemRedColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBJ-hx-mBB">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="99"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <connections>
-                                <action selector="didSelectDrop:" destination="-1" eventType="touchUpInside" id="ORF-BN-qVz"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRH-D6-dky">
                             <rect key="frame" x="337" y="29.666666666666671" width="40" height="40"/>
                             <constraints>
@@ -70,6 +63,13 @@
                             <state key="normal" image="clear" catalog="system"/>
                             <connections>
                                 <action selector="didSelectClear:" destination="-1" eventType="touchUpInside" id="BNS-42-jS8"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBJ-hx-mBB">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="99"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="didSelectDrop:" destination="-1" eventType="touchUpInside" id="ORF-BN-qVz"/>
                             </connections>
                         </button>
                     </subviews>

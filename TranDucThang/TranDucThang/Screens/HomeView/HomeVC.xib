@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -46,11 +47,11 @@
                                 <constraint firstAttribute="height" constant="32" id="w6o-r5-oQV"/>
                             </constraints>
                         </imageView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hr-6o-NjD" customClass="DyniamicTF" customModule="TranDucThang" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hr-6o-NjD" customClass="TextFieldBox" customModule="TranDucThang" customModuleProvider="target">
                             <rect key="frame" x="64" y="0.0" width="334" height="56"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Tìm kiếm"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Tìm kiếm"/>
                             </userDefinedRuntimeAttributes>
                         </view>
                     </subviews>
