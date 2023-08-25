@@ -23,6 +23,7 @@ class AddProductsVC: BaseVC {
     
     var isEdit: Bool = false
     var isUpdate: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.datas = []
