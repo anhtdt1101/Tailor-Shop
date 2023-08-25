@@ -7,25 +7,26 @@
 
 import UIKit
 
-class ClientManageVC: BaseVC {
+class HomeVC: BaseVC {
     @IBOutlet weak var tableView: STableView!
     @IBOutlet weak var searchTF: TextField!
     
     var dataClient: [ClientModel] = []
+    let emptyView = EmptyDataView(frame: CGRect(x: 0, y: 0, width: .kScreenWidth, height: 400))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
         setupTextField()
     }
-
+    
     func setupTextField(){
         searchTF.onEdittingChanged = { [weak self] tf in
             if let text = tf.text, !text.isEmpty{
-            let dataSearch = DatabaseManager.filterClient(text)
-            self?.tableView.datas = dataSearch
+                let dataSearch = DatabaseManager.filterClient(text)
+                self?.isEmptyData(dataSearch)
             } else {
-                self?.tableView.datas = self?.dataClient ?? []
+                self?.isEmptyData(self?.dataClient ?? [])
             }
         }
     }
@@ -35,13 +36,7 @@ class ClientManageVC: BaseVC {
         navBarView?.isHiddenLeft = true
         navBarView?.right1Image = UIImage(systemName: "plus")
         navBarView?.onRight1Action = { [weak self] in
-            let vc = AddNewClientVC()
-            vc.onBackUpdate = { [weak self] isAddNew in
-                if isAddNew{
-                    self?.fetchData()
-                }
-            }
-            self?.navigationController?.pushViewController(vc, animated: true)
+            self?.onAdd()
         }
     }
     
@@ -52,9 +47,26 @@ class ClientManageVC: BaseVC {
         }
     }
     
+    func onAdd(){
+        let vc = AddNewClientVC()
+        vc.onBackUpdate = { [weak self] isAddNew in
+            if isAddNew{
+                self?.fetchData()
+            }
+        }
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func isEmptyData(_ data: [ClientModel]){
+        emptyView.setupContent(title: "Không có dữ liệu")
+        tableView.tableFooterView = data.isEmpty ? emptyView : UIView()
+        tableView.datas = data
+    }
+    
     func fetchData(){
         dataClient = DatabaseManager.getClient()
-        tableView.datas = dataClient
+        isEmptyData(dataClient)
+        tableView.tableFooterView = dataClient.isEmpty ?  emptyView : UIView()
         tableView.onSelected = {[weak self] (item, index) in
             if let item = item as? ClientModel{
                 let vc = ProfileClientVC()
@@ -65,6 +77,7 @@ class ClientManageVC: BaseVC {
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
         }
+        
     }
     
 }

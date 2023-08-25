@@ -23,8 +23,8 @@
 		260CB05828ADFC140062638C /* ImageUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260CB05528ADFC130062638C /* ImageUI.xcassets */; };
 		260CB06328ADFC1F0062638C /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB05C28ADFC1F0062638C /* ClientCell.swift */; };
 		260CB06428ADFC1F0062638C /* ClientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB05D28ADFC1F0062638C /* ClientCell.xib */; };
-		260CB06528ADFC1F0062638C /* ClientManageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB05E28ADFC1F0062638C /* ClientManageVC.xib */; };
-		260CB06628ADFC1F0062638C /* ClientManageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB05F28ADFC1F0062638C /* ClientManageVC.swift */; };
+		260CB06528ADFC1F0062638C /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB05E28ADFC1F0062638C /* HomeVC.xib */; };
+		260CB06628ADFC1F0062638C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB05F28ADFC1F0062638C /* HomeVC.swift */; };
 		260CB06728ADFC1F0062638C /* AddNewClientVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB06128ADFC1F0062638C /* AddNewClientVC.xib */; };
 		260CB06828ADFC1F0062638C /* AddNewClientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB06228ADFC1F0062638C /* AddNewClientVC.swift */; };
 		260CB0A328ADFC230062638C /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB06A28ADFC230062638C /* BaseVC.swift */; };
@@ -44,8 +44,11 @@
 		2657FF0C28AFA155003E7161 /* TypeClothesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FF0A28AFA155003E7161 /* TypeClothesCell.swift */; };
 		2657FF0D28AFA155003E7161 /* TypeClothesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2657FF0B28AFA155003E7161 /* TypeClothesCell.xib */; };
 		2691E3B62A98F98200BDAF1E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2691E3B52A98F98200BDAF1E /* IQKeyboardManagerSwift */; };
-		2691E3B92A98FBCB00BDAF1E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2691E3B82A98FBCB00BDAF1E /* Realm */; };
-		2691E3BB2A98FBCB00BDAF1E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2691E3BA2A98FBCB00BDAF1E /* RealmSwift */; };
+		2691E3BD2A98FC1B00BDAF1E /* RealmServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2691E3BC2A98FC1B00BDAF1E /* RealmServices.swift */; };
+		2691E3C02A98FD2000BDAF1E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2691E3BF2A98FD2000BDAF1E /* Realm */; };
+		2691E3C22A98FD2000BDAF1E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2691E3C12A98FD2000BDAF1E /* RealmSwift */; };
+		2691E3C62A98FDF700BDAF1E /* EmptyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2691E3C42A98FDF700BDAF1E /* EmptyDataView.swift */; };
+		2691E3C72A98FDF700BDAF1E /* EmptyDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2691E3C52A98FDF700BDAF1E /* EmptyDataView.xib */; };
 		451AF05A2A0C88A300E0C113 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451AF0592A0C88A300E0C113 /* TextField.swift */; };
 		451AF0642A0C957400E0C113 /* TextFieldBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451AF0632A0C957400E0C113 /* TextFieldBox.swift */; };
 		451AF0662A0C957E00E0C113 /* TextFieldBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451AF0652A0C957E00E0C113 /* TextFieldBox.xib */; };
@@ -97,8 +100,8 @@
 		260CB05528ADFC130062638C /* ImageUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageUI.xcassets; sourceTree = "<group>"; };
 		260CB05C28ADFC1F0062638C /* ClientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
 		260CB05D28ADFC1F0062638C /* ClientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientCell.xib; sourceTree = "<group>"; };
-		260CB05E28ADFC1F0062638C /* ClientManageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientManageVC.xib; sourceTree = "<group>"; };
-		260CB05F28ADFC1F0062638C /* ClientManageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientManageVC.swift; sourceTree = "<group>"; };
+		260CB05E28ADFC1F0062638C /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		260CB05F28ADFC1F0062638C /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		260CB06128ADFC1F0062638C /* AddNewClientVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewClientVC.xib; sourceTree = "<group>"; };
 		260CB06228ADFC1F0062638C /* AddNewClientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewClientVC.swift; sourceTree = "<group>"; };
 		260CB06A28ADFC230062638C /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -117,6 +120,9 @@
 		2657FEF928AF94F5003E7161 /* AddProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductsVC.xib; sourceTree = "<group>"; };
 		2657FF0A28AFA155003E7161 /* TypeClothesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeClothesCell.swift; sourceTree = "<group>"; };
 		2657FF0B28AFA155003E7161 /* TypeClothesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeClothesCell.xib; sourceTree = "<group>"; };
+		2691E3BC2A98FC1B00BDAF1E /* RealmServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmServices.swift; sourceTree = "<group>"; };
+		2691E3C42A98FDF700BDAF1E /* EmptyDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataView.swift; sourceTree = "<group>"; };
+		2691E3C52A98FDF700BDAF1E /* EmptyDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyDataView.xib; sourceTree = "<group>"; };
 		451AF0592A0C88A300E0C113 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		451AF0632A0C957400E0C113 /* TextFieldBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBox.swift; sourceTree = "<group>"; };
 		451AF0652A0C957E00E0C113 /* TextFieldBox.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldBox.xib; sourceTree = "<group>"; };
@@ -141,9 +147,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2691E3BB2A98FBCB00BDAF1E /* RealmSwift in Frameworks */,
+				2691E3C22A98FD2000BDAF1E /* RealmSwift in Frameworks */,
+				2691E3C02A98FD2000BDAF1E /* Realm in Frameworks */,
 				2691E3B62A98F98200BDAF1E /* IQKeyboardManagerSwift in Frameworks */,
-				2691E3B92A98FBCB00BDAF1E /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,8 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				260CB05B28ADFC1F0062638C /* Cell */,
-				260CB05E28ADFC1F0062638C /* ClientManageVC.xib */,
-				260CB05F28ADFC1F0062638C /* ClientManageVC.swift */,
+				260CB05E28ADFC1F0062638C /* HomeVC.xib */,
+				260CB05F28ADFC1F0062638C /* HomeVC.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 				260CB08528ADFC230062638C /* TextView */,
 				260CB08928ADFC230062638C /* CollectionView */,
 				260CB08E28ADFC230062638C /* TextFields */,
+				2691E3C32A98FDF700BDAF1E /* EmptyView */,
 				260CB09328ADFC230062638C /* CustomView */,
 			);
 			path = Controls;
@@ -350,6 +357,7 @@
 		260CB0D528AE247D0062638C /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				2691E3BC2A98FC1B00BDAF1E /* RealmServices.swift */,
 				260CB04428ADFB560062638C /* DatabaseManager.swift */,
 			);
 			path = Service;
@@ -394,6 +402,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		2691E3C32A98FDF700BDAF1E /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				2691E3C42A98FDF700BDAF1E /* EmptyDataView.swift */,
+				2691E3C52A98FDF700BDAF1E /* EmptyDataView.xib */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
 		455E5FDB2A0CE5A900BE680C /* Popup */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,8 +447,8 @@
 			name = TranDucThang;
 			packageProductDependencies = (
 				2691E3B52A98F98200BDAF1E /* IQKeyboardManagerSwift */,
-				2691E3B82A98FBCB00BDAF1E /* Realm */,
-				2691E3BA2A98FBCB00BDAF1E /* RealmSwift */,
+				2691E3BF2A98FD2000BDAF1E /* Realm */,
+				2691E3C12A98FD2000BDAF1E /* RealmSwift */,
 			);
 			productName = TranDucThang;
 			productReference = 260CAF9828ADFB290062638C /* TranDucThang.app */;
@@ -463,7 +480,7 @@
 			mainGroup = 260CAF8F28ADFB290062638C;
 			packageReferences = (
 				2691E3B42A98F98200BDAF1E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				2691E3B72A98FBCB00BDAF1E /* XCRemoteSwiftPackageReference "realm-swift" */,
+				2691E3BE2A98FD2000BDAF1E /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 260CAF9928ADFB290062638C /* Products */;
 			projectDirPath = "";
@@ -485,6 +502,7 @@
 				451AF0662A0C957E00E0C113 /* TextFieldBox.xib in Resources */,
 				455E5FE22A0CE7F900BE680C /* PickTypePopup.xib in Resources */,
 				260CB05628ADFC140062638C /* Navbar&Tabbar.xcassets in Resources */,
+				2691E3C72A98FDF700BDAF1E /* EmptyDataView.xib in Resources */,
 				2657FEF628AF8AEB003E7161 /* ProductsCell.xib in Resources */,
 				260CB06728ADFC1F0062638C /* AddNewClientVC.xib in Resources */,
 				260CB06428ADFC1F0062638C /* ClientCell.xib in Resources */,
@@ -492,7 +510,7 @@
 				260CB0D428AE241F0062638C /* DetailsInputCell.xib in Resources */,
 				260CB0C728ADFC230062638C /* NavBarView.xib in Resources */,
 				260CB0EB28AE3E9C0062638C /* ProfileClientVC.xib in Resources */,
-				260CB06528ADFC1F0062638C /* ClientManageVC.xib in Resources */,
+				260CB06528ADFC1F0062638C /* HomeVC.xib in Resources */,
 				260CAFA328ADFB290062638C /* Main.storyboard in Resources */,
 				260CB05728ADFC140062638C /* Assets.xcassets in Resources */,
 				45643D722A08EAA800616583 /* TextView.xib in Resources */,
@@ -512,6 +530,7 @@
 				451AF05A2A0C88A300E0C113 /* TextField.swift in Sources */,
 				260CB04B28ADFB560062638C /* DatabaseManager.swift in Sources */,
 				455E5FDD2A0CE5B800BE680C /* BasePopup.swift in Sources */,
+				2691E3C62A98FDF700BDAF1E /* EmptyDataView.swift in Sources */,
 				45643D762A08EB0A00616583 /* SCollectionView.swift in Sources */,
 				451AF0682A0C9E7D00E0C113 /* Number+Extension.swift in Sources */,
 				45643D772A08EB0A00616583 /* SCollectionViewCell.swift in Sources */,
@@ -523,7 +542,7 @@
 				260CB04928ADFB560062638C /* ClientModel.swift in Sources */,
 				260CB06828ADFC1F0062638C /* AddNewClientVC.swift in Sources */,
 				2657FF0C28AFA155003E7161 /* TypeClothesCell.swift in Sources */,
-				260CB06628ADFC1F0062638C /* ClientManageVC.swift in Sources */,
+				260CB06628ADFC1F0062638C /* HomeVC.swift in Sources */,
 				260CB0A628ADFC230062638C /* UIColor+Extension.swift in Sources */,
 				260CB0A428ADFC230062638C /* Constant.swift in Sources */,
 				260CB04728ADFB560062638C /* PantsModel.swift in Sources */,
@@ -540,6 +559,7 @@
 				260CAF9E28ADFB290062638C /* SceneDelegate.swift in Sources */,
 				45EA0F222A0B3A2D00F8BCE6 /* UIView+Extension.swift in Sources */,
 				45643D6F2A08EA6E00616583 /* STableViewCell.swift in Sources */,
+				2691E3BD2A98FC1B00BDAF1E /* RealmServices.swift in Sources */,
 				260CB0A728ADFC230062638C /* Date+Extension.swift in Sources */,
 				260CB04C28ADFB560062638C /* ProductModel.swift in Sources */,
 			);
@@ -789,7 +809,7 @@
 				minimumVersion = 6.0.0;
 			};
 		};
-		2691E3B72A98FBCB00BDAF1E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		2691E3BE2A98FD2000BDAF1E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -805,14 +825,14 @@
 			package = 2691E3B42A98F98200BDAF1E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
 		};
-		2691E3B82A98FBCB00BDAF1E /* Realm */ = {
+		2691E3BF2A98FD2000BDAF1E /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2691E3B72A98FBCB00BDAF1E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 2691E3BE2A98FD2000BDAF1E /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = Realm;
 		};
-		2691E3BA2A98FBCB00BDAF1E /* RealmSwift */ = {
+		2691E3C12A98FD2000BDAF1E /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2691E3B72A98FBCB00BDAF1E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 2691E3BE2A98FD2000BDAF1E /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
