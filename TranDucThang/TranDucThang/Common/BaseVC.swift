@@ -37,6 +37,7 @@ class BaseVC: UIViewController {
         didSet {
             setNavTitle(title)
         }
+        
     }
     func setNavTitle(_ title:String?) {
         if let title = title {

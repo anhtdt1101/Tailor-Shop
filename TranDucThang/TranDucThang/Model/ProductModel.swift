@@ -8,7 +8,6 @@
 import Foundation
 import RealmSwift
 
-
 enum TypeProduct {
     case vest
     case shirt
