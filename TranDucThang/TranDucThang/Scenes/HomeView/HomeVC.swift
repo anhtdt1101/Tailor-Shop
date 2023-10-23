@@ -8,27 +8,17 @@
 import UIKit
 
 class HomeVC: BaseVC {
-    @IBOutlet weak var tableView: STableView!
-    @IBOutlet weak var searchTF: TextField!
+    @IBOutlet private weak var tableView: STableView!
+    @IBOutlet private weak var searchTF: TextField!
     
-    var dataClient: [ClientModel] = []
-    let emptyView = EmptyDataView(frame: CGRect(x: 0, y: 0, width: .kScreenWidth, height: 400))
+    private let viewModel = HomeViewModel()
+    private let emptyView = EmptyDataView(frame: CGRect(x: 0, y: 0, width: .kScreenWidth, height: 400))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
+        setupTableView()
         setupTextField()
-    }
-    
-    func setupTextField(){
-        searchTF.onEdittingChanged = { [weak self] tf in
-            if let text = tf.text, !text.isEmpty{
-                let dataSearch = DatabaseManager.filterClient(text)
-                self?.isEmptyData(dataSearch)
-            } else {
-                self?.isEmptyData(self?.dataClient ?? [])
-            }
-        }
     }
     
     override func setupNavbarView() {
@@ -40,14 +30,44 @@ class HomeVC: BaseVC {
         }
     }
     
-    func onUpdateAProfile(_ index: IndexPath){
-        if let newData = DatabaseManager.getAClient(dataClient[index.row]){
-            dataClient[index.row] = newData
-            tableView.reloadRows(at: [index], with: .none)
+    private func fetchData(){
+        viewModel.fetchData()
+    }
+    
+    private func setupTableView() {
+        isEmptyData(viewModel.dataClient)
+        tableView.tableFooterView = viewModel.dataClient.isEmpty ?  emptyView : UIView()
+        tableView.onSelected = {[weak self] (item, index) in
+            if let item = item as? ClientModel {
+//                let vc = ProfileClientVC()
+//                vc.client = item
+//                vc.onUpdate = { [weak self] isUpdate in
+//                    self?.onUpdateAProfile(index)
+//                }
+//                self?.navigationController?.pushViewController(vc, animated: true)
+            }
         }
     }
     
-    func onAdd(){
+    private func setupTextField(){
+//        searchTF.onEdittingChanged = { [weak self] tf in
+//            if let text = tf.text, !text.isEmpty {
+//                let dataSearch = DatabaseManager.filterClient(text)
+//                self?.isEmptyData(dataSearch)
+//            } else {
+//                self?.isEmptyData(self?.viewModel.dataClient ?? [])
+//            }
+//        }
+    }
+    
+    private func onUpdateAProfile(_ index: IndexPath){
+//        if let newData = DatabaseManager.getAClient(dataClient[index.row]){
+//            dataClient[index.row] = newData
+//            tableView.reloadRows(at: [index], with: .none)
+//        }
+    }
+    
+    func onAdd() {
         let vc = AddNewClientVC()
         vc.onBackUpdate = { [weak self] isAddNew in
             if isAddNew{
@@ -57,27 +77,10 @@ class HomeVC: BaseVC {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func isEmptyData(_ data: [ClientModel]){
+    private func isEmptyData(_ data: [ClientModel]){
         emptyView.setupContent(title: "Không có dữ liệu")
         tableView.tableFooterView = data.isEmpty ? emptyView : UIView()
         tableView.datas = data
-    }
-    
-    func fetchData(){
-        dataClient = DatabaseManager.getClient()
-        isEmptyData(dataClient)
-        tableView.tableFooterView = dataClient.isEmpty ?  emptyView : UIView()
-        tableView.onSelected = {[weak self] (item, index) in
-            if let item = item as? ClientModel{
-                let vc = ProfileClientVC()
-                vc.client = item
-                vc.onUpdate = { [weak self] isUpdate in
-                    self?.onUpdateAProfile(index)
-                }
-                self?.navigationController?.pushViewController(vc, animated: true)
-            }
-        }
-        
     }
     
 }

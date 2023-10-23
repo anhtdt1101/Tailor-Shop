@@ -16,10 +16,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let viewController = HomeVC()
-        let navigation = UINavigationController(rootViewController: viewController)
-        window.rootViewController = navigation
         self.window = window
+        MainTabbarController.shared = MainTabbarController()
+        let navi = UINavigationController(rootViewController: MainTabbarController.shared)
+        navi.isNavigationBarHidden = true
+        window.rootViewController = navi
         window.makeKeyAndVisible()
     }
     

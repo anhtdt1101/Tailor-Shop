@@ -39,14 +39,29 @@ class RealmServices {
         }
     }
     
-    func create<T: Object>(_ object: T, type: RealmType = .disk) {
+    func readData<T: Object>(_ objectType: T.Type, callback: ((Bool) -> Void)? = nil) -> [T] {
+        let realm = self.getRealm(type: .disk)
+        do {
+            let results = realm.objects(T.self)
+            callback?(true)
+            return Array(results)
+        } catch {
+            print("Error reading data from Realm: \(error)")
+            callback?(false)
+            return []
+        }
+    }
+    
+    func create<T: Object>(_ object: T, type: RealmType = .disk, callback: ((Bool) -> Void)? = nil) {
         let realm = self.getRealm(type: type)
         do {
             try realm.write {
                 realm.add(object, update: .all)
+                callback?(true)
             }
         } catch {
             print(error)
+            callback?(false)
         }
     }
     
@@ -63,14 +78,16 @@ class RealmServices {
         }
     }
     
-    func delete<T: Object>(_ object: T, type: RealmType = .disk) {
+    func delete<T: Object>(_ object: T, type: RealmType = .disk, callback: ((Bool) -> Void)? = nil) {
         let realm = self.getRealm(type: type)
         do {
             try realm.write {
                 realm.delete(object)
+                callback?(true)
             }
         } catch {
             print(error)
+            callback?(false)
         }
     }
     

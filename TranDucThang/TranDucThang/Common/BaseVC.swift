@@ -9,8 +9,6 @@ import Foundation
 import UIKit
 
 class BaseVC: UIViewController {
-    var vLoading: UIView?
-    
     @IBOutlet weak var navBarView: NavBarView?
     
     override func viewDidLoad() {
@@ -23,6 +21,7 @@ class BaseVC: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         NSLog("[\(Self.self) \(#function)]:ZZZ")
@@ -39,7 +38,8 @@ class BaseVC: UIViewController {
         }
         
     }
-    func setNavTitle(_ title:String?) {
+    
+    func setNavTitle(_ title: String?) {
         if let title = title {
             guard let _ = navBarView?.superview else {
                 return
@@ -49,6 +49,7 @@ class BaseVC: UIViewController {
             }
         }
     }
+    
     func setupNavbarView() {
         // override this func
     }

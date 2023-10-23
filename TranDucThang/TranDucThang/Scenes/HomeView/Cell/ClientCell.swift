@@ -21,7 +21,11 @@ class ClientCell: STableViewCell {
     override func setData(_ data: Any) {
         if let data = data as? ClientModel{
             nameLbl.text = data.fullName
-            phoneLbl.text = data.phoneNumber
+            var phoneText = ""
+            data.phoneNumber.forEach { phone in
+                phoneText.append("\(phone) \n")
+            }
+            phoneLbl.text = phoneText
             addressLbl.text = data.addDress
         }
     }
