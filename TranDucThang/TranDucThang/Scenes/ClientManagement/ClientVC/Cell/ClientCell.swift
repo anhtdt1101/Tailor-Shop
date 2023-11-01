@@ -15,7 +15,6 @@ class ClientCell: STableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
 
     override func setData(_ data: Any) {

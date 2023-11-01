@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HomeViewModel {
+class ClientViewModel {
     var dataClient: [ClientModel] = []
 
     func fetchData() {

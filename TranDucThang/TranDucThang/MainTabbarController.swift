@@ -9,12 +9,10 @@ import Foundation
 import UIKit
 
 class MainTabbarController: UITabBarController {
-    
     static var shared = MainTabbarController()
     
     private var homeViewController: UINavigationController?
     private var clientViewController: UINavigationController?
-    
     private var subViewControllers: [UIViewController] = []
     
     override func viewDidLoad() {
@@ -25,7 +23,7 @@ class MainTabbarController: UITabBarController {
     // MARK: Setup child viewcontrollers
     private func setupChildViewcontrollers() {
         homeViewController = UINavigationController(rootViewController: HomeVC())
-        clientViewController = UINavigationController(rootViewController: ClientManagementVC())
+        clientViewController = UINavigationController(rootViewController: ClientVC())
         
         homeViewController?.tabBarItem = UITabBarItem(title: "Trang chủ",
                                                       image: UIImage(systemName: "house"),

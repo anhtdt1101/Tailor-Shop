@@ -17,8 +17,8 @@
 		260CB05828ADFC140062638C /* ImageUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260CB05528ADFC130062638C /* ImageUI.xcassets */; };
 		260CB06328ADFC1F0062638C /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB05C28ADFC1F0062638C /* ClientCell.swift */; };
 		260CB06428ADFC1F0062638C /* ClientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB05D28ADFC1F0062638C /* ClientCell.xib */; };
-		260CB06528ADFC1F0062638C /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB05E28ADFC1F0062638C /* HomeVC.xib */; };
-		260CB06628ADFC1F0062638C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB05F28ADFC1F0062638C /* HomeVC.swift */; };
+		260CB06528ADFC1F0062638C /* ClientVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB05E28ADFC1F0062638C /* ClientVC.xib */; };
+		260CB06628ADFC1F0062638C /* ClientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB05F28ADFC1F0062638C /* ClientVC.swift */; };
 		260CB06728ADFC1F0062638C /* AddNewClientVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260CB06128ADFC1F0062638C /* AddNewClientVC.xib */; };
 		260CB06828ADFC1F0062638C /* AddNewClientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB06228ADFC1F0062638C /* AddNewClientVC.swift */; };
 		260CB0A328ADFC230062638C /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CB06A28ADFC230062638C /* BaseVC.swift */; };
@@ -47,15 +47,15 @@
 		2678E52B2AE4E57000DE1489 /* ElementProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678E52A2AE4E57000DE1489 /* ElementProduct.swift */; };
 		2678E52D2AE4E5FB00DE1489 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678E52C2AE4E5FB00DE1489 /* ProductModel.swift */; };
 		2678E52F2AE4E87B00DE1489 /* ClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678E52E2AE4E87B00DE1489 /* ClientModel.swift */; };
-		2678E5312AE4E99000DE1489 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678E5302AE4E99000DE1489 /* HomeViewModel.swift */; };
+		2678E5312AE4E99000DE1489 /* ClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678E5302AE4E99000DE1489 /* ClientViewModel.swift */; };
 		2678E5342AE4F47000DE1489 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2678E5332AE4F47000DE1489 /* Realm */; };
 		2678E5362AE4F47000DE1489 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2678E5352AE4F47000DE1489 /* RealmSwift */; };
 		2678E5392AE4F49500DE1489 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2678E5382AE4F49500DE1489 /* IQKeyboardManagerSwift */; };
 		2678E53B2AE4F8B300DE1489 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678E53A2AE4F8B300DE1489 /* AlertController.swift */; };
 		2678E53D2AE4F90700DE1489 /* AddNewClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678E53C2AE4F90700DE1489 /* AddNewClientViewModel.swift */; };
 		2678E5412AE6B00400DE1489 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678E5402AE6B00400DE1489 /* MainTabbarController.swift */; };
-		2678E5452AE6B1CE00DE1489 /* ClientManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678E5432AE6B1CE00DE1489 /* ClientManagementVC.swift */; };
-		2678E5462AE6B1CE00DE1489 /* ClientManagementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2678E5442AE6B1CE00DE1489 /* ClientManagementVC.xib */; };
+		2678E54A2AE6BBAB00DE1489 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678E5482AE6BBAB00DE1489 /* HomeVC.swift */; };
+		2678E54B2AE6BBAB00DE1489 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2678E5492AE6BBAB00DE1489 /* HomeVC.xib */; };
 		2691E3BD2A98FC1B00BDAF1E /* RealmServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2691E3BC2A98FC1B00BDAF1E /* RealmServices.swift */; };
 		2691E3C62A98FDF700BDAF1E /* EmptyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2691E3C42A98FDF700BDAF1E /* EmptyDataView.swift */; };
 		2691E3C72A98FDF700BDAF1E /* EmptyDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2691E3C52A98FDF700BDAF1E /* EmptyDataView.xib */; };
@@ -105,8 +105,8 @@
 		260CB05528ADFC130062638C /* ImageUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageUI.xcassets; sourceTree = "<group>"; };
 		260CB05C28ADFC1F0062638C /* ClientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
 		260CB05D28ADFC1F0062638C /* ClientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientCell.xib; sourceTree = "<group>"; };
-		260CB05E28ADFC1F0062638C /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
-		260CB05F28ADFC1F0062638C /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		260CB05E28ADFC1F0062638C /* ClientVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientVC.xib; sourceTree = "<group>"; };
+		260CB05F28ADFC1F0062638C /* ClientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientVC.swift; sourceTree = "<group>"; };
 		260CB06128ADFC1F0062638C /* AddNewClientVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewClientVC.xib; sourceTree = "<group>"; };
 		260CB06228ADFC1F0062638C /* AddNewClientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewClientVC.swift; sourceTree = "<group>"; };
 		260CB06A28ADFC230062638C /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -135,12 +135,12 @@
 		2678E52A2AE4E57000DE1489 /* ElementProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementProduct.swift; sourceTree = "<group>"; };
 		2678E52C2AE4E5FB00DE1489 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		2678E52E2AE4E87B00DE1489 /* ClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientModel.swift; sourceTree = "<group>"; };
-		2678E5302AE4E99000DE1489 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2678E5302AE4E99000DE1489 /* ClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewModel.swift; sourceTree = "<group>"; };
 		2678E53A2AE4F8B300DE1489 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		2678E53C2AE4F90700DE1489 /* AddNewClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewClientViewModel.swift; sourceTree = "<group>"; };
 		2678E5402AE6B00400DE1489 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
-		2678E5432AE6B1CE00DE1489 /* ClientManagementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientManagementVC.swift; sourceTree = "<group>"; };
-		2678E5442AE6B1CE00DE1489 /* ClientManagementVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientManagementVC.xib; sourceTree = "<group>"; };
+		2678E5482AE6BBAB00DE1489 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		2678E5492AE6BBAB00DE1489 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		2691E3BC2A98FC1B00BDAF1E /* RealmServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmServices.swift; sourceTree = "<group>"; };
 		2691E3C42A98FDF700BDAF1E /* EmptyDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataView.swift; sourceTree = "<group>"; };
 		2691E3C52A98FDF700BDAF1E /* EmptyDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyDataView.xib; sourceTree = "<group>"; };
@@ -246,10 +246,8 @@
 		260CB05A28ADFC1F0062638C /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				260CB05B28ADFC1F0062638C /* Cell */,
-				260CB05E28ADFC1F0062638C /* HomeVC.xib */,
-				260CB05F28ADFC1F0062638C /* HomeVC.swift */,
-				2678E5302AE4E99000DE1489 /* HomeViewModel.swift */,
+				2678E5482AE6BBAB00DE1489 /* HomeVC.swift */,
+				2678E5492AE6BBAB00DE1489 /* HomeVC.xib */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -468,8 +466,10 @@
 		2678E5472AE6B5E500DE1489 /* ClientVC */ = {
 			isa = PBXGroup;
 			children = (
-				2678E5432AE6B1CE00DE1489 /* ClientManagementVC.swift */,
-				2678E5442AE6B1CE00DE1489 /* ClientManagementVC.xib */,
+				260CB05B28ADFC1F0062638C /* Cell */,
+				260CB05E28ADFC1F0062638C /* ClientVC.xib */,
+				260CB05F28ADFC1F0062638C /* ClientVC.swift */,
+				2678E5302AE4E99000DE1489 /* ClientViewModel.swift */,
 			);
 			path = ClientVC;
 			sourceTree = "<group>";
@@ -571,7 +571,6 @@
 			files = (
 				2657FEFB28AF94F5003E7161 /* AddProductsVC.xib in Resources */,
 				2657FF0D28AFA155003E7161 /* TypeClothesCell.xib in Resources */,
-				2678E5462AE6B1CE00DE1489 /* ClientManagementVC.xib in Resources */,
 				260CAFA828ADFB2A0062638C /* LaunchScreen.storyboard in Resources */,
 				451AF0662A0C957E00E0C113 /* TextFieldBox.xib in Resources */,
 				455E5FE22A0CE7F900BE680C /* PickTypePopup.xib in Resources */,
@@ -585,8 +584,9 @@
 				260CB0D428AE241F0062638C /* DetailsInputCell.xib in Resources */,
 				260CB0C728ADFC230062638C /* NavBarView.xib in Resources */,
 				260CB0EB28AE3E9C0062638C /* ProfileClientVC.xib in Resources */,
-				260CB06528ADFC1F0062638C /* HomeVC.xib in Resources */,
+				260CB06528ADFC1F0062638C /* ClientVC.xib in Resources */,
 				260CAFA328ADFB290062638C /* Main.storyboard in Resources */,
+				2678E54B2AE6BBAB00DE1489 /* HomeVC.xib in Resources */,
 				260CB05728ADFC140062638C /* Assets.xcassets in Resources */,
 				45643D722A08EAA800616583 /* TextView.xib in Resources */,
 			);
@@ -610,7 +610,6 @@
 				2691E3C62A98FDF700BDAF1E /* EmptyDataView.swift in Sources */,
 				45643D762A08EB0A00616583 /* SCollectionView.swift in Sources */,
 				451AF0682A0C9E7D00E0C113 /* Number+Extension.swift in Sources */,
-				2678E5452AE6B1CE00DE1489 /* ClientManagementVC.swift in Sources */,
 				45643D772A08EB0A00616583 /* SCollectionViewCell.swift in Sources */,
 				45EA0F242A0B3A3400F8BCE6 /* UIViewController+Extension.swift in Sources */,
 				260CB0A328ADFC230062638C /* BaseVC.swift in Sources */,
@@ -623,14 +622,15 @@
 				260CB06828ADFC1F0062638C /* AddNewClientVC.swift in Sources */,
 				2678E52F2AE4E87B00DE1489 /* ClientModel.swift in Sources */,
 				264BCF022AE3C30300FA515F /* RClientModel.swift in Sources */,
-				2678E5312AE4E99000DE1489 /* HomeViewModel.swift in Sources */,
+				2678E5312AE4E99000DE1489 /* ClientViewModel.swift in Sources */,
 				2657FF0C28AFA155003E7161 /* TypeClothesCell.swift in Sources */,
 				26AEB9012AE3C86A007FB18F /* RElementProduct.swift in Sources */,
-				260CB06628ADFC1F0062638C /* HomeVC.swift in Sources */,
+				260CB06628ADFC1F0062638C /* ClientVC.swift in Sources */,
 				260CB0A628ADFC230062638C /* UIColor+Extension.swift in Sources */,
 				264BCF002AE3C2C400FA515F /* RProductModel.swift in Sources */,
 				260CB0A428ADFC230062638C /* Constant.swift in Sources */,
 				45643D6D2A08EA6E00616583 /* STableView.swift in Sources */,
+				2678E54A2AE6BBAB00DE1489 /* HomeVC.swift in Sources */,
 				455E5FE02A0CE7F400BE680C /* PickTypePopup.swift in Sources */,
 				45643D732A08EAA800616583 /* TextView.swift in Sources */,
 				260CB0C628ADFC230062638C /* NavBarView.swift in Sources */,
