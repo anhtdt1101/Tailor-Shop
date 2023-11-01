@@ -177,9 +177,9 @@
 			children = (
 				260CB05228ADFC130062638C /* Resources */,
 				260CB06928ADFC230062638C /* Common */,
-				260CB0D528AE247D0062638C /* Services */,
+				260CB0D528AE247D0062638C /* Service */,
 				260CB03E28ADFB560062638C /* Model */,
-				260CB05928ADFC1F0062638C /* Scenes */,
+				260CB05928ADFC1F0062638C /* Screens */,
 				260CAF9B28ADFB290062638C /* AppDelegate.swift */,
 				260CAF9D28ADFB290062638C /* SceneDelegate.swift */,
 				260CAF9F28ADFB290062638C /* ViewController.swift */,
@@ -212,7 +212,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		260CB05928ADFC1F0062638C /* Scenes */ = {
+		260CB05928ADFC1F0062638C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				2657FEF728AF94D9003E7161 /* AddProduct */,
@@ -220,7 +220,7 @@
 				260CB05A28ADFC1F0062638C /* HomeView */,
 				260CB06028ADFC1F0062638C /* AddNewClient */,
 			);
-			path = Scenes;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		260CB05A28ADFC1F0062638C /* HomeView */ = {
@@ -258,7 +258,7 @@
 				260CB06A28ADFC230062638C /* BaseVC.swift */,
 				260CB06B28ADFC230062638C /* Constant.swift */,
 				260CB06C28ADFC230062638C /* Extensions */,
-				260CB07A28ADFC230062638C /* Components */,
+				260CB07A28ADFC230062638C /* Controls */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -276,28 +276,28 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		260CB07A28ADFC230062638C /* Components */ = {
+		260CB07A28ADFC230062638C /* Controls */ = {
 			isa = PBXGroup;
 			children = (
 				455E5FDB2A0CE5A900BE680C /* Popup */,
-				260CB07B28ADFC230062638C /* STableView */,
+				260CB07B28ADFC230062638C /* TableView */,
 				260CB08528ADFC230062638C /* TextView */,
-				260CB08928ADFC230062638C /* SCollectionView */,
+				260CB08928ADFC230062638C /* CollectionView */,
 				260CB08E28ADFC230062638C /* TextFields */,
 				2691E3C32A98FDF700BDAF1E /* EmptyView */,
 				260CB09328ADFC230062638C /* CustomView */,
 			);
-			path = Components;
+			path = Controls;
 			sourceTree = "<group>";
 		};
-		260CB07B28ADFC230062638C /* STableView */ = {
+		260CB07B28ADFC230062638C /* TableView */ = {
 			isa = PBXGroup;
 			children = (
 				45643D6B2A08EA6E00616583 /* STableHeaderView.swift */,
 				45643D6A2A08EA6E00616583 /* STableView.swift */,
 				45643D6C2A08EA6E00616583 /* STableViewCell.swift */,
 			);
-			path = STableView;
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		260CB08528ADFC230062638C /* TextView */ = {
@@ -309,13 +309,13 @@
 			path = TextView;
 			sourceTree = "<group>";
 		};
-		260CB08928ADFC230062638C /* SCollectionView */ = {
+		260CB08928ADFC230062638C /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
 				45643D742A08EB0900616583 /* SCollectionView.swift */,
 				45643D752A08EB0A00616583 /* SCollectionViewCell.swift */,
 			);
-			path = SCollectionView;
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		260CB08E28ADFC230062638C /* TextFields */ = {
@@ -354,13 +354,13 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		260CB0D528AE247D0062638C /* Services */ = {
+		260CB0D528AE247D0062638C /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				2691E3BC2A98FC1B00BDAF1E /* RealmServices.swift */,
 				260CB04428ADFB560062638C /* DatabaseManager.swift */,
 			);
-			path = Services;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		260CB0E728AE3E710062638C /* ProfileClient */ = {
