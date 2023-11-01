@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="KGk-i7-Jjw" customClass="DetailsInputCell" customModule="TranDucThang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="477" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="477" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLE-YI-Vxd" customClass="TextView" customModule="TranDucThang" customModuleProvider="target">
+                        <rect key="frame" x="16" y="0.0" width="445" height="93"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-Ok-igZ" customClass="TextFieldBox" customModule="TranDucThang" customModuleProvider="target">
+                        <rect key="frame" x="16" y="8" width="445" height="56"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="iLE-YI-Vxd" secondAttribute="bottom" id="BuW-aY-EOO"/>
+                    <constraint firstAttribute="trailing" secondItem="iLE-YI-Vxd" secondAttribute="trailing" constant="16" id="XRg-eb-uZw"/>
+                    <constraint firstItem="Hsg-Ok-igZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="alp-1h-97Y"/>
+                    <constraint firstItem="Hsg-Ok-igZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bzo-TN-ysR"/>
+                    <constraint firstItem="iLE-YI-Vxd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cbJ-3u-l9a"/>
+                    <constraint firstItem="iLE-YI-Vxd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="rlM-CI-fZw"/>
+                    <constraint firstItem="Hsg-Ok-igZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uNU-B0-1m7"/>
+                    <constraint firstItem="Hsg-Ok-igZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="wnU-D6-1uc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textField" destination="Hsg-Ok-igZ" id="o8s-ny-Xan"/>
+                <outlet property="textView" destination="iLE-YI-Vxd" id="hY0-jX-fIM"/>
+            </connections>
+            <point key="canvasLocation" x="251.44927536231887" y="167.07589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
